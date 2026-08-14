@@ -1,0 +1,926 @@
+{
+  "scene": {
+    "location": "INT. LUXURY APARTMENT",
+    "id": "scene_1_c7bf",
+    "location_id": "INT_LUXURY_APARTMENT",
+    "products": [],
+    "status": "draft",
+    "characters": [
+      "WOMAN",
+      "MAN",
+      "WOMAN_MAN"
+    ],
+    "synopsis": "A woman gets dressed in front of a mirror in a messy, expensive bedroom while a man sits out of focus on the bed. She struggles with her dress zipper, fixes it, and they argue. She drops an earring, applies lipstick, and confronts him. She finishes getting ready, puts on heels, and grabs her bag. The camera pans up her body to reveal the man has vanished from the bed. She looks in the mirror, revealing her face is actually the man's face, softened and feminine.",
+    "ai_logs": [
+      "[17:31:47] > INITIALIZING DIRECTOR AI CONNECTION...",
+      "[17:31:47] > FETCHING PROJECT METADATA...",
+      "[17:31:47] > ANALYZING GENRE & VISUAL STYLE...",
+      "[17:31:47] > CONTEXT LOADED: 1 VISUAL RULES APPLIED.",
+      "[17:31:47] > TAXONOMY LOADED: Archetype 'Custom \u2014 Gothic Golden Threshold' applied.",
+      "[17:31:47] > CONSULTING DEPARTMENT HEADS (Gaffer, VFX, Colorist)...",
+      "[17:31:47] > NO DIALOGUES FOUND \u2014 using scene summary only.",
+      "[17:31:47] > LOADING CHARACTER PROFILES...",
+      "[17:31:47] > CHARACTER PROFILES LOADED: 3 characters.",
+      "[17:31:47] > WARDROBE FALLBACK: 3 costumes from character profiles.",
+      "[17:31:47] > SPATIAL CONTEXT LOADED for location 'INT_LUXURY_APARTMENT'.",
+      "[17:32:13] > CONTEXT LAYER GENERATED: 6 departments analyzed.",
+      "[17:32:13] > TRANSMITTING TO GEMINI 3 PRO...",
+      "[17:33:35] > RESPONSE RECEIVED. PARSING SHOT DATA...",
+      "[17:33:36] > MAPPING CHARACTERS: WOMAN, MAN, WOMAN_MAN...",
+      "[17:33:36] > SHOT LIST GENERATION COMPLETE.",
+      "[17:33:36] > DIRECTOR'S CUT: Verifying 14 shots against production context...",
+      "[17:34:33] > DIRECTOR'S CUT COMPLETE: 9 shots approved."
+    ],
+    "time": "NIGHT",
+    "visual_prompt": "",
+    "scene_number": 1,
+    "dialogues": [],
+    "set_design": {
+      "burst_error": null,
+      "burst_video_url": null,
+      "topography_360": {
+        "front": "The far wall features a dark teal surface with gold paneling. Two tall dark-framed windows are heavily covered by thick brown velvet drapes. To the right, dark wood double doors with intricate gold filigree stand aggressively ajar, allowing a blinding slice of golden light to pierce the room. The continuous wide-plank distressed mahogany floor extends into this view, littered with crumpled silk dresses, stilettos, and a leather handbag. The multi-tiered crown molding borders the ceiling above.",
+        "left": "Facing 90 degrees left, the wall is dark teal with continuous gold rectangular paneling. It grounds a massive, king-sized bed featuring a deep navy velvet, diamond-tufted headboard. The bed is a chaotic mound of heavy silk and velvet linens in deep blues and silvers. The continuous mahogany hardwood floor and the thick ceiling crown molding span the length of this wall. The windows, heavy drapes, and ajar double doors from the front wall are completely out of view.",
+        "right": "Facing 90 degrees right, the heavily textured dark teal wall is dominated by a colossal, floor-to-ceiling antique mirror enclosed in a thick, highly ornate gold-leaf frame. The mirror reflects the dark walls, the scattered floor mess, and the navy bed from the opposing wall. The continuous distressed mahogany hardwood floor runs along the baseboards, while the off-white ceiling and crown molding frame the top. The intense golden light from the front doors is not directly visible, appearing only as a glowing reflection in the glass.",
+        "back": "The near wall (behind the camera) serves as a flatter, grounding anchor for the room, contrasting the deep lighting of the front. It features a grand, black marble fireplace mantel flanked by the continuous gold-trimmed teal wainscoting seen throughout the room. Above the mantel hangs an imposing, dark oil painting. To the sides of the hearth sit two deep, tufted navy leather wingback chairs. Faintly glowing embers cast a warm amber under-light. The continuous mahogany hardwood floor and upper crown molding tie the space together, but the deep vanishing points and blinding hallway light of the front wall are entirely absent."
+      },
+      "architecture_notes": "The architecture is rooted in classic Gothic opulence updated for high-end luxury. The walls are finished in a deeply saturated dark teal, adorned with intricate, rectangular gold-leaf paneling and wainscoting. The ceiling is high and off-white, bordered by massive, multi-tiered classical crown molding. The flooring consists of wide-plank, distressed dark mahogany hardwood with a slight reflective sheen, grounding the space in dark, heavy tones. The far wall features two tall, deeply recessed windows obscured by floor-to-ceiling drapes, and imposing, heavy dark wood double doors featuring elaborate gold filigree panels. The near wall is anchored by a grand, intricately carved black marble fireplace mantel.",
+      "anchor_image_url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fassets%2Fset_design_scene_1_c7bf_front_60c8ae.jpg?alt=media&token=af159edb-0aae-4383-8d53-66f0fa347f0b",
+      "image_urls": {
+        "front": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fassets%2Fset_design_scene_1_c7bf_front_60c8ae.jpg?alt=media&token=af159edb-0aae-4383-8d53-66f0fa347f0b",
+        "left": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fassets%2Fset_design_scene_1_c7bf_left_b3fcbf.jpg?alt=media&token=0bd68fe6-c815-4d70-ab63-9438488e4339",
+        "back": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fset_inpaints%2Fscene_1_c7bf_back_12e755.png?alt=media&token=7cf42d0e-8c33-4391-b502-8ebfad193d84",
+        "right": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fassets%2Fset_design_scene_1_c7bf_right_42d0d5.jpg?alt=media&token=793105e6-d6e0-406c-be31-7943d8c53fff"
+      },
+      "image_prompt": "An ultra-realistic cinematic still frame of an empty, opulent luxury bedroom from the FRONT angle, establishing a Gothic Golden Threshold aesthetic. The far wall is painted a moody, dark teal, accented with intricate rectangular gold paneling. Two tall, dark-framed windows are heavily obscured by thick, floor-to-ceiling brown velvet drapes. To the right, imposing dark wood double doors with elaborate gold filigree panels stand ajar, spilling a violently sharp, intense blade of golden-hour light from an adjacent hallway into the dim bedroom, creating long, dramatic shadows. The floor is continuous wide-plank distressed dark mahogany hardwood, littered with discarded luxury items: crumpled silk dresses, scattered stilettos, and a leather handbag. Above, an off-white ceiling is bordered by deep, multi-tiered classical crown molding, softly illuminated by a warm, diffuse amber gradient. High tension, photorealistic, moody atmosphere, 8k, volumetric lighting, NO PEOPLE, empty room.",
+      "burst_status": null,
+      "atmosphere": "The room exudes an atmosphere of heavy, suffocating luxury\u2014a psychological threshold where opulence meets decay. The air feels still and dense, carrying the implied scent of expensive, heavy floral perfume undercut by the faint, dry ash of a cooling hearth. Sharp, intense golden-hour light slices violently through the doorway, clashing with the oppressive, moody shadows of the dark teal and navy interior. The emotional character is fraught and tense, mirroring a fractured psyche. The chaotic scatter of expensive silks and leathers on the floor suggests a recent, frenetic energy, leaving behind a space that feels deeply isolated, claustrophobic, and suspended in time.",
+      "error": null,
+      "image_status": "ready",
+      "image_url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fassets%2Fset_design_scene_1_c7bf_front_60c8ae.jpg?alt=media&token=af159edb-0aae-4383-8d53-66f0fa347f0b",
+      "is_locked": true
+    },
+    "created_at": "2026-04-17 16:59:43.332000+00:00",
+    "estimated_duration_seconds": 0,
+    "context_layer": {
+      "vfx": {
+        "atmospheric": "Heavy, claustrophobic air with a subtle, realistic haziness to give the luxury apartment a slightly stifling, dream-like feel",
+        "environmental": [
+          "Dust motes floating heavily in the window's light shafts",
+          "Fingerprint smudges and slight optical distortion on the edges of the mirror",
+          "Subtle chromatic aberration around the edges of the frame to heighten psychological tension"
+        ]
+      },
+      "subtext": "An internal struggle of identity and dysmorphia externalized. The man in the background represents the protagonist's suppressed self or psychological weight. The camera should treat the woman as fractured, shooting her through reflections and shallow focus, until the final tilt unifies the fractured identity into a chilling, singular truth.",
+      "gaffer": {
+        "key_light": "Cool ambient city light streaming through large windows contrasted by harsh, warm vanity bulbs",
+        "fill": "Minimal fill, creating deep shadows to obscure the man's features in the background and build suspense",
+        "shifts": "Starts with a warm balance from the vanity, but as she turns away and the man vanishes, the cooler, isolating city light dominates",
+        "practicals": "Vanity mirror lights surrounding the glass, a bedside lamp casting a dim pool on the messy bed"
+      },
+      "colorist": {
+        "grade": "Rich, moody palette with deep gold and burgundy tones for the luxury elements, contrasted by sickly, cold cyan shadows",
+        "contrast": "High contrast with deep, crushed blacks to swallow the background details and keep the man obscured",
+        "shifts": "Shifts from a rich, opulent warmth to a sterile, cold green-blue as the psychological twist is revealed in the mirror"
+      },
+      "hair_makeup": [
+        "WOMAN: Immaculate but strained presentation, flawless skin with bold red lipstick applied aggressively during the scene",
+        "MAN: Disheveled, shadowed, features deliberately obscured, messy unkempt hair",
+        "WOMAN_MAN: A seamless, uncanny blend; the man's distinct facial structure smoothed out with foundation and feminine contouring, wearing the bold lipstick the woman just applied"
+      ],
+      "key_grip": {
+        "camera_energy": "Smooth, voyeuristic, and deliberate, shifting to an unnerving, absolute stillness at the final reveal",
+        "movement_style": "Slow, creeping dollies and a precise, calculated tilt-up from the heels to the face, maintaining a shallow depth of field until the final focus pull to the mirror"
+      }
+    },
+    "slugline": "INT. LUXURY APARTMENT"
+  },
+  "shots": [
+    {
+      "location": "INT. LUXURY APARTMENT",
+      "image_url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Finpaints%2Fshot_01_05788a.png?alt=media&token=f4899d0b-a22e-4c27-a037-e0dfd2611ea4",
+      "ambient_scene": "The air feels still and dense, an atmosphere of heavy, suffocating luxury where opulence meets decay. Heavy, stagnant air carries the implied scent of floral perfume and dry ash from a cooling hearth, making the space feel frozen in time.",
+      "error_message": "Video servers are temporarily overloaded. Please try again in a few minutes.",
+      "status": "inpainting",
+      "video_prompt": "The scene unfolds in a luxurious, subtly messy apartment bedroom exactly like @image1 bathed in intense shafts of golden volumetric light spilling through slightly ajar double doors where dust motes dance. A female figure matching @image3 walks towards the mirror while looking at the man who looks exactly like @image2. The woman says \"You don't even hesitate anymore\". Then the camera cuts to the man and he says \"What do you mean?\" then we hear the voice of the woman saying \"You know exactly what I mean\" then the camera cuts to the woman while she is talking and she says \"we don't have to keep playing this game.\"",
+      "visual_action": "Cinematic establishing wide shot of a lavish, oppressive Gothic luxury bedroom. Sharp, intense golden-hour light slices violently through imposing dark wood double doors with gold filigree, clashing with the dark teal walls. Key cool ambient city light streams through tall windows obscured by floor-to-ceiling drapes, contrasted by harsh, warm vanity bulbs. Rich, moody palette with deep gold and burgundy tones, contrasted by sickly, cold cyan shadows. Wide-plank distressed dark mahogany floors are littered with scattered expensive silks and leathers. The space feels deeply isolated, claustrophobic, and suspended in time, reflecting a fraught, fractured psyche. No characters present. Shot on a 24mm prime lens.",
+      "provider": "gemini",
+      "aspect_ratio": "16:9",
+      "order": 0,
+      "seedance_task_id": "3fa4ffda-1edd-4cca-a5b2-a95e6148af8c",
+      "estimated_duration": 5,
+      "model_used": "gemini-3-pro-image-preview",
+      "id": "shot_01",
+      "location_id": "INT_LUXURY_APARTMENT",
+      "products": [],
+      "continuity_note": "Scene start. Establishes the location's heavy, claustrophobic atmosphere and the primary light source before introducing characters.",
+      "error_code": "PROVIDER_OVERLOAD",
+      "camera_direction": "Camera low to the floor near the center of the room, looking straight ahead toward the far end doors and windows.",
+      "video_history": [
+        {
+          "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fvideos%2Fscene_1_c7bf_shot_01_f479de.mp4?alt=media&token=0ad52817-4f72-4da6-85ab-a9f5772b11b4",
+          "provider": "piapi-kling-3.0",
+          "sound": true,
+          "duration": 7,
+          "created_at": "2026-04-17 18:25:52.710777+00:00",
+          "aspect_ratio": "16:9",
+          "mode": "std",
+          "task_id": "ba3eb40e-8211-4fdf-8914-56bef011c2c2",
+          "end_frame": false,
+          "credits_charged": 4.5,
+          "prompt": "The scene takes place in the luxurious, subtly messy apartment bedroom environments derived from @image_4 and @image_5, maintaining their exact architectural layout and heavy, intense shafts of golden volumetric light spilling through slightly ajar double doors where dust motes dance slowly. A female figure matching @image_2 stands in the foreground before a mirror, gracefully adjusting her dress, while a male figure matching @image_3 sits out of focus on the bed behind her. Over the 5-second continuous take, an eerie, breathless stillness anchors the room as the woman from @image_2 finishes getting ready and gazes into the glass. The camera begins with a low-angle wide 24mm incredibly slow dolly push-in, gently panning up her form. As the sequence progresses to the final seconds, a chilling visual shift occurs: the out-of-focus man from @image_3 vanishes completely from the bed, and the woman's reflection in the mirror seamlessly shifts to display a softened, feminine version of the man's face. [Sound: the delicate rustle of silk fabric, heavy and tense ambient room tone, a faint echoing breath]. The visual style is ultra-realistic, resembling a high-budget psychological thriller, featuring masterful cinematic lighting, rich shadow contrast, and deep depth of field. No blood, no injury detail, no graphic impact, no text, no broken character anatomy."
+        },
+        {
+          "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fvideos%2Fscene_1_c7bf_shot_01_5ccf1f.mp4?alt=media&token=c3a6cc3c-9073-4c8b-a1b5-f905cc940ef1",
+          "provider": "kling-v3-omni",
+          "sound": false,
+          "duration": 7,
+          "created_at": "2026-04-17 19:02:37.156346+00:00",
+          "aspect_ratio": "16:9",
+          "mode": "pro",
+          "task_id": "022d9633-fda7-495f-9bd3-fb6847de7496",
+          "end_frame": false,
+          "credits_charged": 5.9,
+          "prompt": "The scene unfolds in a luxurious, subtly messy apartment bedroom bathed in intense shafts of golden volumetric light spilling through slightly ajar double doors where dust motes dance. A female figure matching @image_2 stands in the foreground before a mirror gracefully adjusting her dress, while a male figure matching @image_3 sits out of focus on the bed behind her. Over this continuous 7-second sequence, an eerie stillness anchors the room. The woman from @image_2 finishes getting ready, applies lipstick, and gazes into the glass. Suddenly, a chilling psychological shift occurs: the out-of-focus man from @image_3 seamlessly vanishes completely from the bed. Simultaneously, the woman's reflection in the mirror distorts, revealing a softened, feminine version of the man's face instead of her own. Captured with a low-angle wide 24mm lens, the camera executes an incredibly slow dolly push-in, gently panning up her form to emphasize the unsettling reveal. The visual style is an ultra-realistic, high-budget psychological thriller, featuring masterful cinematic lighting, rich shadow contrast, deep depth of field, and a heavy, tense atmosphere. -- referencing @image_1"
+        },
+        {
+          "provider": "seedance-2",
+          "task_id": "3fa4ffda-1edd-4cca-a5b2-a95e6148af8c",
+          "created_at": "2026-04-18T07:39:02.379001+00:00",
+          "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fvideos%2Fscene_1_c7bf_shot_01_075a19.mp4?alt=media&token=2d25fb8b-2d0b-458e-a338-ebff85cd1c3c"
+        }
+      ],
+      "characters": [
+        "MAN",
+        "WOMAN"
+      ],
+      "shot_type": "Low-angle wide 24mm",
+      "location_angle": "front",
+      "type": "Low-angle wide 24mm",
+      "video_url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fvideos%2Fscene_1_c7bf_shot_01_075a19.mp4?alt=media&token=2d25fb8b-2d0b-458e-a338-ebff85cd1c3c",
+      "video_status": "ready",
+      "video_settings": {
+        "element_list": [],
+        "end_frame_url": null,
+        "reference_media": [
+          {
+            "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/projects%2F6372a137-59e8-4abf-aff8-6e804a943f01%2Fcharacters%2Fgen_MAN_013e71.png?alt=media&token=aee9cac0-80e0-4387-9ef8-2d158cf948b7",
+            "type": "image",
+            "name": "Man"
+          },
+          {
+            "name": "Woman",
+            "type": "image",
+            "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/projects%2F6372a137-59e8-4abf-aff8-6e804a943f01%2Fassets%2FWOMAN%2Fmain_6372a137_59e8_4abf_aff8_6e804a943f01_episodes_inpaints_WOMAN_cc3f00.png?alt=media&token=0e3fc7d8-5cbb-4b5c-a198-9bfc30d5f47c"
+          }
+        ],
+        "source_video_duration": null,
+        "shot_type": "intelligence",
+        "source_video_url": null,
+        "quality": "pro",
+        "provider": "seedance-2",
+        "aspect_ratio": "16:9",
+        "multi_prompt": [],
+        "watermark": false,
+        "negative_prompt": "",
+        "sound": "on",
+        "voice_list": [],
+        "mode": "pro",
+        "cfg_scale": 0.5,
+        "model_version": "official",
+        "multi_shot": true,
+        "duration": "10",
+        "keep_original_audio": false
+      },
+      "created_at": "2026-04-17T17:34:33.657Z",
+      "prompt": "Cinematic establishing wide shot of a lavish, oppressive Gothic luxury bedroom. Sharp, intense golden-hour light slices violently through imposing dark wood double doors with gold filigree, clashing with the dark teal walls. Key cool ambient city light streams through tall windows obscured by floor-to-ceiling drapes, contrasted by harsh, warm vanity bulbs. Rich, moody palette with deep gold and burgundy tones, contrasted by sickly, cold cyan shadows. Wide-plank distressed dark mahogany floors are littered with scattered expensive silks and leathers. The space feels deeply isolated, claustrophobic, and suspended in time, reflecting a fraught, fractured psyche. No characters present. Shot on a 24mm prime lens. realistic"
+    },
+    {
+      "location": "INT. LUXURY APARTMENT",
+      "image_url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/projects%2F6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fshots%2Fscene_1_c7bf_shot_02_f10160.png?alt=media&token=8ae1cc6e-e3a8-425a-a19e-7570b312587e",
+      "ambient_scene": "Still, dense air carries the implied scent of heavy floral perfume and dry ash from a cooling hearth. The space feels deeply isolated, fraught, and claustrophobic.",
+      "error_message": "Video servers are temporarily overloaded. Please try again in a few minutes.",
+      "status": "rendered",
+      "video_prompt": "A slight pan left shot focusing on the texture of the discarded silk fabric for 2 seconds and then camera cuts to slow dolly on the mid shot of an open closet which is filled with black clothes but in between those black clothes there is a red dress hanging and prominently visible from the side. And then camera cuts to pan right on the different mannequin heads on a table with different different wigs on them. Take the room reference from @image2 ",
+      "visual_action": "Cinematic macro shot of the distressed dark mahogany hardwood floor. A scattered expensive silk garment lies abandoned, reflecting a recent, frenetic energy. Sharp golden-hour light slices violently across the floor, clashing with sickly, cold cyan shadows and minimal fill. Rich, moody palette with deep gold and burgundy tones. The atmosphere is heavy and suffocatingly luxurious. Shot at T2.8.",
+      "provider": "gemini",
+      "aspect_ratio": "16:9",
+      "order": 2,
+      "seedance_task_id": "b38d093e-ab22-4a39-9abc-ba561b4f9a80",
+      "estimated_duration": 4,
+      "model_used": "gemini-3-pro-image-preview",
+      "id": "shot_02",
+      "location_id": "INT_LUXURY_APARTMENT",
+      "products": [],
+      "continuity_note": "Cut from wide establishing to a detail insert of the floor, building the messy, frenetic psychological state of the room.",
+      "error_code": "PROVIDER_OVERLOAD",
+      "camera_direction": "Camera angled sharply down at the ground near the center of the room, looking at the floorboards.",
+      "video_history": [
+        {
+          "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fvideos%2Fscene_1_c7bf_shot_02_1346d4.mp4?alt=media&token=239b277a-cff1-4ffe-a298-cea0de16923f",
+          "provider": "piapi-kling-3.0",
+          "sound": true,
+          "duration": 5,
+          "created_at": "2026-04-17 18:17:40.133757+00:00",
+          "aspect_ratio": "16:9",
+          "mode": "std",
+          "task_id": "f4fbc079-9c29-4a33-9619-762b3bf148ef",
+          "end_frame": false,
+          "credits_charged": 3.0,
+          "prompt": "A completely static shot focusing on the texture of the discarded shoe and silk fabric. A faint, subtle flicker of amber light plays across the shiny leather surface."
+        },
+        {
+          "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fvideos%2Fscene_1_c7bf_shot_02_7fa730.mp4?alt=media&token=000beba2-adc4-40a5-a59d-e31c5c36d658",
+          "provider": "piapi-kling-3.0",
+          "sound": true,
+          "duration": 5,
+          "created_at": "2026-04-17 18:23:01.881118+00:00",
+          "aspect_ratio": "16:9",
+          "mode": "std",
+          "task_id": "4d4358d6-8fe9-4400-a044-885bf0cacc5f",
+          "end_frame": false,
+          "credits_charged": 3.0,
+          "prompt": "A completely static shot focusing on the texture of the discarded silk fabric. A faint, subtle flicker of amber light plays across the shiny leather surface."
+        },
+        {
+          "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fvideos%2Fscene_1_c7bf_shot_02_e47a20.mp4?alt=media&token=181d381c-db15-452f-be28-3801b7368e55",
+          "provider": "piapi-kling-3.0",
+          "sound": true,
+          "duration": 5,
+          "created_at": "2026-04-18 08:10:06.294287+00:00",
+          "aspect_ratio": "16:9",
+          "mode": "std",
+          "task_id": "cb760006-13cb-4f23-8cfd-8e59d3f4ad1b",
+          "end_frame": false,
+          "credits_charged": 3.0,
+          "prompt": "A slight pan left shot focusing on the texture of the discarded silk fabric. A faint, subtle flicker of amber light plays across the shiny leather surface."
+        },
+        {
+          "provider": "seedance-2",
+          "task_id": "b38d093e-ab22-4a39-9abc-ba561b4f9a80",
+          "created_at": "2026-04-18T20:55:25.590613+00:00",
+          "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fvideos%2Fscene_1_c7bf_shot_02_f74ee0.mp4?alt=media&token=196d7c3e-1e34-4ae3-84a7-4ed55d799a88"
+        }
+      ],
+      "characters": [],
+      "shot_type": "Macro 100mm",
+      "location_angle": "front",
+      "type": "Macro 100mm",
+      "video_settings": {
+        "element_list": [],
+        "end_frame_url": null,
+        "reference_media": [
+          {
+            "name": "Shot 1",
+            "type": "image",
+            "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Finpaints%2Fshot_01_05788a.png?alt=media&token=f4899d0b-a22e-4c27-a037-e0dfd2611ea4"
+          }
+        ],
+        "source_video_duration": null,
+        "shot_type": "intelligence",
+        "source_video_url": null,
+        "quality": "fast",
+        "provider": "seedance-2",
+        "aspect_ratio": "16:9",
+        "multi_prompt": [],
+        "watermark": false,
+        "negative_prompt": "",
+        "sound": "on",
+        "voice_list": [],
+        "mode": "std",
+        "cfg_scale": 0.5,
+        "multi_shot": false,
+        "duration": "10",
+        "keep_original_audio": false
+      },
+      "video_url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fvideos%2Fscene_1_c7bf_shot_02_f74ee0.mp4?alt=media&token=196d7c3e-1e34-4ae3-84a7-4ed55d799a88",
+      "video_status": "error",
+      "created_at": "2026-04-17T17:34:33.658Z",
+      "prompt": "Cinematic macro shot of the distressed dark mahogany hardwood floor. A scattered expensive silk garment lies abandoned, reflecting a recent, frenetic energy. Sharp golden-hour light slices violently across the floor, clashing with sickly, cold cyan shadows and minimal fill. Rich, moody palette with deep gold and burgundy tones. The atmosphere is heavy and suffocatingly luxurious. Shot at T2.8. realistic"
+    },
+    {
+      "location": "INT. LUXURY APARTMENT",
+      "error_message": null,
+      "ambient_scene": "The atmosphere is dense and fraught, mirroring a fractured psyche. Harsh vanity lights clash with the still, claustrophobic chill of the dark room, suspended in time.",
+      "image_url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/projects%2F6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fshots%2Fscene_1_c7bf_shot_03_4cb918.png?alt=media&token=a017a1eb-c119-4ed4-9b69-864421a7a104",
+      "status": "rendered",
+      "video_prompt": "The scene starts with the girl (@image3) and the guy(@image2) looking at each other standing and the girl turns back and looks herself in the mirror and the guy sits on the bed, both of their positions should match exactly like in @image1. The camera cuts to the close up of the woman setting her dress and she says \"You know what I realized? You\u2019re very comfortable with me, as long as I don\u2019t exist.\" And then the camera cuts to the guy, he says \"That\u2019s not fair.\"",
+      "visual_action": "Cinematic medium wide shot. A slender South Asian Woman stands before a colossal, ornate gold-leaf floor-to-ceiling mirror. The camera captures her reflection. In the background reflection, a Man sits on a navy velvet bed. Key cool ambient city light streams through tall windows, contrasted by harsh, warm vanity bulbs illuminating the woman. Rich gold and burgundy tones highlight the dark teal walls. The room exudes heavy, suffocating luxury. Shot on 35mm.",
+      "provider": "gemini",
+      "aspect_ratio": "16:9",
+      "order": 1,
+      "seedance_task_id": "432b1999-138f-4517-b065-7294987243b6",
+      "estimated_duration": 6,
+      "model_used": "gemini-3-pro-image-preview",
+      "id": "shot_03",
+      "location_id": "INT_LUXURY_APARTMENT",
+      "products": [],
+      "continuity_note": "Cut from floor insert to character introduction. Woman is at the right wall mirror, Man is established on the left wall bed via reflection.",
+      "error_code": "UNKNOWN",
+      "camera_direction": "Camera positioned in the middle of the room, facing the right wall's massive mirror to catch both the Woman and the room's reflection.",
+      "video_history": [
+        {
+          "provider": "seedance-2",
+          "task_id": "432b1999-138f-4517-b065-7294987243b6",
+          "created_at": "2026-04-18T08:08:04.466678+00:00",
+          "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fvideos%2Fscene_1_c7bf_shot_03_2e35e0.mp4?alt=media&token=ea142eeb-40ba-48b5-be00-a45b240756c7"
+        }
+      ],
+      "characters": [
+        "WOMAN",
+        "MAN"
+      ],
+      "shot_type": "Medium Wide 35mm",
+      "location_angle": "right",
+      "type": "Medium Wide 35mm",
+      "video_url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fvideos%2Fscene_1_c7bf_shot_03_2e35e0.mp4?alt=media&token=ea142eeb-40ba-48b5-be00-a45b240756c7",
+      "video_status": "ready",
+      "video_settings": {
+        "element_list": [],
+        "end_frame_url": null,
+        "reference_media": [
+          {
+            "name": "Man",
+            "type": "image",
+            "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/projects%2F6372a137-59e8-4abf-aff8-6e804a943f01%2Fcharacters%2Fgen_MAN_013e71.png?alt=media&token=aee9cac0-80e0-4387-9ef8-2d158cf948b7"
+          },
+          {
+            "name": "Woman",
+            "type": "image",
+            "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/projects%2F6372a137-59e8-4abf-aff8-6e804a943f01%2Fassets%2FWOMAN%2Fmain_6372a137_59e8_4abf_aff8_6e804a943f01_episodes_inpaints_WOMAN_cc3f00.png?alt=media&token=0e3fc7d8-5cbb-4b5c-a198-9bfc30d5f47c"
+          }
+        ],
+        "source_video_duration": null,
+        "shot_type": "intelligence",
+        "source_video_url": null,
+        "provider": "seedance-2",
+        "quality": "pro",
+        "aspect_ratio": "16:9",
+        "multi_prompt": [],
+        "watermark": false,
+        "negative_prompt": "",
+        "sound": "on",
+        "voice_list": [],
+        "mode": "pro",
+        "cfg_scale": 0.5,
+        "duration": "10",
+        "multi_shot": false,
+        "keep_original_audio": false
+      },
+      "created_at": "2026-04-17T17:34:33.658Z",
+      "prompt": "Cinematic medium wide shot. A slender South Asian Woman stands before a colossal, ornate gold-leaf floor-to-ceiling mirror. The camera captures her reflection. In the background reflection, a Man sits on a navy velvet bed. Key cool ambient city light streams through tall windows, contrasted by harsh, warm vanity bulbs illuminating the woman. Rich gold and burgundy tones highlight the dark teal walls. The room exudes heavy, suffocating luxury. Shot on 35mm. realistic"
+    },
+    {
+      "location": "INT. LUXURY APARTMENT",
+      "image_url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Finpaints%2Fshot_04_b83912.png?alt=media&token=d6cd8f2a-f4ba-4c7e-8a08-0410edeeceaf",
+      "ambient_scene": "The air is thick with the implied scent of heavy floral perfume. Oppressive, tense energy builds in the claustrophobic space as she dresses.",
+      "error_message": "An unexpected error occurred. Please try again.",
+      "status": "inpainting",
+      "video_prompt": "The scene starts with the girl (@image2) trying to fix the zipper herself. Harder than needed like in the @image1. She says with agitation, without turning her head \"No?? Try introducing me once. ONCE!! ANYWHERE!\" The camera cuts to the guy sitting exactly like in the @image4 while hearing to the girl's voice saying \"See how unfair it feels then.\" The guy exhales. Measured. Practiced and says \"It's not about you\" And the camera cuts to the woman, she turns towards the camera now and laughs sharply, humorless.  take the guy's face reference from @image3 ",
+      "visual_action": "Cinematic extreme close-up of a black expensive gown being zipped up by the South Asian Woman. Her hands grasp the rich fabric. Harsh, warm vanity bulbs create sharp highlights on the metal zipper, while minimal fill leaves the background as a deeply crushed, sickly cold cyan shadow. Rich, moody palette with deep gold and burgundy tones. The atmosphere is tense and claustrophobic. Shot on 100mm macro.",
+      "provider": "gemini",
+      "aspect_ratio": "16:9",
+      "order": 3,
+      "seedance_task_id": "39be8265-e44b-47d1-a177-79b78d016c5d",
+      "estimated_duration": 4,
+      "model_used": "gemini-3-pro-image-preview",
+      "id": "shot_04",
+      "location_id": "INT_LUXURY_APARTMENT",
+      "products": [],
+      "continuity_note": "Cut from medium wide to ECU on the action of dressing. Spatial placement remains at the right wall mirror.",
+      "error_code": "UNKNOWN",
+      "camera_direction": "Camera tight on the Woman's back, facing the mirror slightly off-axis.",
+      "video_history": [
+        {
+          "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fvideos%2Fscene_1_c7bf_shot_04_60cacb.mp4?alt=media&token=3ea09b0f-78a2-4e44-85e4-c07617baa048",
+          "provider": "piapi-kling-3.0",
+          "sound": true,
+          "duration": 5,
+          "created_at": "2026-04-17 18:26:08.138396+00:00",
+          "aspect_ratio": "16:9",
+          "mode": "std",
+          "task_id": "a2c725c1-5941-443a-b00e-3de0039342d2",
+          "end_frame": false,
+          "credits_charged": 3.0,
+          "prompt": "Elegant hands pull a black gown up over smooth skin, then attempt to pull up the metallic back zipper. The zipper snags halfway. The hands yank at it in brief frustration."
+        },
+        {
+          "prompt": "Elegant hands pull a black gown up over smooth skin, then attempt to pull up the metallic back zipper. The zipper snags halfway. The hands yank at it in brief frustration.",
+          "provider": "piapi-kling-3.0",
+          "sound": true,
+          "duration": 5,
+          "created_at": "2026-04-17 18:56:48.786670+00:00",
+          "aspect_ratio": "16:9",
+          "mode": "std",
+          "task_id": "ed5594be-c750-479d-9db8-ffa4aec2531c",
+          "end_frame": false,
+          "credits_charged": 3.2,
+          "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fvideos%2Fscene_1_c7bf_shot_04_5537a8.mp4?alt=media&token=f76d00b7-8c6e-4543-969d-15d852676589"
+        },
+        {
+          "provider": "seedance-2",
+          "task_id": "7962de6a-0570-4a33-beee-8ceabc665d8e",
+          "created_at": "2026-04-18T08:41:30.371099+00:00",
+          "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fvideos%2Fscene_1_c7bf_shot_04_666cc0.mp4?alt=media&token=8ca2faa1-09b5-4ca6-b2e7-46f05f9cddf9"
+        },
+        {
+          "provider": "seedance-2",
+          "task_id": "39be8265-e44b-47d1-a177-79b78d016c5d",
+          "created_at": "2026-04-19T08:02:13.293252+00:00",
+          "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fvideos%2Fscene_1_c7bf_shot_04_9165bc.mp4?alt=media&token=900d9b6c-92da-4842-a34a-31fc1c3dc67f"
+        }
+      ],
+      "characters": [
+        "WOMAN"
+      ],
+      "shot_type": "Extreme Close-Up (ECU) 100mm",
+      "location_angle": "right",
+      "type": "Extreme Close-Up (ECU) 100mm",
+      "video_url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fvideos%2Fscene_1_c7bf_shot_04_9165bc.mp4?alt=media&token=900d9b6c-92da-4842-a34a-31fc1c3dc67f",
+      "video_status": "ready",
+      "video_settings": {
+        "element_list": [],
+        "end_frame_url": null,
+        "reference_media": [
+          {
+            "name": "Woman",
+            "type": "image",
+            "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/projects%2F6372a137-59e8-4abf-aff8-6e804a943f01%2Fassets%2FWOMAN%2Fmain_6372a137_59e8_4abf_aff8_6e804a943f01_episodes_inpaints_WOMAN_cc3f00.png?alt=media&token=0e3fc7d8-5cbb-4b5c-a198-9bfc30d5f47c"
+          },
+          {
+            "name": "Man",
+            "type": "image",
+            "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/projects%2F6372a137-59e8-4abf-aff8-6e804a943f01%2Fcharacters%2Fgen_MAN_013e71.png?alt=media&token=aee9cac0-80e0-4387-9ef8-2d158cf948b7"
+          },
+          {
+            "name": "Shot 5",
+            "type": "image",
+            "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/projects%2F6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fshots%2Fscene_1_c7bf_shot_05_adb937.png?alt=media&token=d5f2cca2-0f7b-4902-b383-17dae53d85ad"
+          }
+        ],
+        "source_video_duration": null,
+        "shot_type": "intelligence",
+        "source_video_url": null,
+        "provider": "seedance-2",
+        "quality": "pro",
+        "aspect_ratio": "16:9",
+        "multi_prompt": [],
+        "watermark": false,
+        "negative_prompt": "",
+        "sound": "on",
+        "voice_list": [],
+        "mode": "pro",
+        "cfg_scale": 0.5,
+        "duration": "10",
+        "multi_shot": true,
+        "keep_original_audio": false
+      },
+      "created_at": "2026-04-17T17:34:33.658Z",
+      "prompt": "Cinematic extreme close-up of a black expensive gown being zipped up by the South Asian Woman. Her hands grasp the rich fabric. Harsh, warm vanity bulbs create sharp highlights on the metal zipper, while minimal fill leaves the background as a deeply crushed, sickly cold cyan shadow. Rich, moody palette with deep gold and burgundy tones. The atmosphere is tense and claustrophobic. Shot on 100mm macro. realistic"
+    },
+    {
+      "location": "INT. LUXURY APARTMENT",
+      "image_url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/projects%2F6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fshots%2Fscene_1_c7bf_shot_05_adb937.png?alt=media&token=d5f2cca2-0f7b-4902-b383-17dae53d85ad",
+      "ambient_scene": "Heavy, dense air surrounds the isolated figure. The atmosphere is fraught and tense, acting as a psychological threshold where opulence meets decay.",
+      "error_message": "Generation timed out \u2014 servers may be busy. Please try again.",
+      "status": "rendered",
+      "video_prompt": "the camera slowly dolly in towards the guy sitting on the bed while he slowly turns his head to his left, he is broken inside. ",
+      "visual_action": "Cinematic medium shot of the Man sitting on a massive bed against a dark teal wall with intricate gold-leaf paneling. He is wearing indistinct, matte dark garments that completely absorb the soft key light. Key cool ambient city light streaming through large windows washes over him, with minimal fill creating deep, sickly cold cyan shadows to obscure his features and build suspense. The room feels isolated, claustrophobic, and suspended in time. Shot on 50mm.",
+      "provider": "gemini",
+      "aspect_ratio": "16:9",
+      "order": 4,
+      "seedance_task_id": "bba56f18-3d02-4b46-8363-3cc76edc9625",
+      "estimated_duration": 5,
+      "model_used": "gemini-3-pro-image-preview",
+      "id": "shot_05",
+      "location_id": "INT_LUXURY_APARTMENT",
+      "products": [],
+      "continuity_note": "Cut to a reaction/cutaway of the Man on the bed. Establishes his physical presence outside of the mirror reflection.",
+      "error_code": "GENERATION_TIMEOUT",
+      "camera_direction": "Camera points directly at the left wall, capturing the bed and the Man sitting in the shadows.",
+      "video_history": [
+        {
+          "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fvideos%2Fscene_1_c7bf_shot_05_180d43.mp4?alt=media&token=cfa436c7-d9f9-4650-801b-bcd48d238f91",
+          "provider": "piapi-kling-3.0",
+          "sound": true,
+          "duration": 5,
+          "created_at": "2026-04-17 18:26:08.660256+00:00",
+          "aspect_ratio": "16:9",
+          "mode": "std",
+          "task_id": "9f97351d-fb7b-46fe-b021-5de519ede758",
+          "end_frame": false,
+          "credits_charged": 3.2,
+          "prompt": "The shadowy man sits rigidly on the velvet bed. His head is slightly bowed, completely still. He slowly shifts his weight, the dark fabric of his clothes absorbing the light."
+        },
+        {
+          "provider": "seedance-2",
+          "task_id": "bba56f18-3d02-4b46-8363-3cc76edc9625",
+          "created_at": "2026-04-18T10:37:03.233533+00:00",
+          "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fvideos%2Fscene_1_c7bf_shot_05_105ecb.mp4?alt=media&token=79c36014-77ee-4047-b0bf-a7b255ac82bc"
+        },
+        {
+          "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fvideos%2Fscene_1_c7bf_shot_05_c042ab.mp4?alt=media&token=e23449b9-bca0-450b-9188-cc077a8f7c61",
+          "provider": "piapi-kling-3.0",
+          "sound": true,
+          "duration": 5,
+          "created_at": "2026-04-18 22:15:12.130249+00:00",
+          "aspect_ratio": "16:9",
+          "mode": "pro",
+          "task_id": "ce07cd50-b94e-4f8e-bb1d-c8ef467208e6",
+          "end_frame": false,
+          "credits_charged": 4.0,
+          "prompt": "the camera slowly dolly in towards the guy sitting on the bed while he slowly turns his head to his left, he is broken inside. "
+        }
+      ],
+      "characters": [
+        "MAN"
+      ],
+      "shot_type": "Medium 50mm",
+      "location_angle": "left",
+      "type": "Medium 50mm",
+      "video_url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fvideos%2Fscene_1_c7bf_shot_05_c042ab.mp4?alt=media&token=e23449b9-bca0-450b-9188-cc077a8f7c61",
+      "video_status": "ready",
+      "video_settings": {
+        "element_list": [],
+        "end_frame_url": null,
+        "reference_media": [
+          {
+            "name": "Woman",
+            "type": "image",
+            "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/projects%2F6372a137-59e8-4abf-aff8-6e804a943f01%2Fassets%2FWOMAN%2Fmain_6372a137_59e8_4abf_aff8_6e804a943f01_episodes_inpaints_WOMAN_cc3f00.png?alt=media&token=0e3fc7d8-5cbb-4b5c-a198-9bfc30d5f47c"
+          },
+          {
+            "name": "Man",
+            "type": "image",
+            "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/projects%2F6372a137-59e8-4abf-aff8-6e804a943f01%2Fcharacters%2Fgen_MAN_013e71.png?alt=media&token=aee9cac0-80e0-4387-9ef8-2d158cf948b7"
+          }
+        ],
+        "source_video_duration": null,
+        "shot_type": "intelligence",
+        "source_video_url": null,
+        "quality": "pro",
+        "provider": "kling-v3",
+        "aspect_ratio": "16:9",
+        "multi_prompt": [],
+        "watermark": false,
+        "negative_prompt": "",
+        "sound": "on",
+        "voice_list": [],
+        "mode": "pro",
+        "cfg_scale": 0.5,
+        "duration": "5",
+        "multi_shot": false,
+        "keep_original_audio": false
+      },
+      "created_at": "2026-04-17T17:34:33.658Z",
+      "prompt": "Cinematic medium shot of the Man sitting on a massive bed against a dark teal wall with intricate gold-leaf paneling. He is wearing indistinct, matte dark garments that completely absorb the soft key light. Key cool ambient city light streaming through large windows washes over him, with minimal fill creating deep, sickly cold cyan shadows to obscure his features and build suspense. The room feels isolated, claustrophobic, and suspended in time. Shot on 50mm. realistic"
+    },
+    {
+      "model_used": "gemini-3-pro-image-preview",
+      "id": "shot_06",
+      "location_id": "INT_LUXURY_APARTMENT",
+      "error_message": null,
+      "products": [],
+      "ambient_scene": "The room is filled with still, dense air and the suffocating scent of heavy floral perfume. The tense, chaotic energy is masked by the sharp vanity lights.",
+      "continuity_note": "Cut from floor insert to ECU of lipstick application. Woman is masking her frustration with makeup.",
+      "status": "inpainting",
+      "camera_direction": "Camera inches from the mirror surface, capturing a tight detail of the reflection.",
+      "video_history": [
+        {
+          "prompt": "A close up of lips pressing together, smudging a heavy layer of bold red lipstick. The lips part slightly, taking a tense, angry breath.",
+          "provider": "piapi-kling-3.0",
+          "sound": true,
+          "duration": 5,
+          "created_at": "2026-04-17 18:26:47.645146+00:00",
+          "aspect_ratio": "16:9",
+          "mode": "std",
+          "task_id": "2997d43f-70cb-418a-b97c-363395f48f8f",
+          "end_frame": false,
+          "credits_charged": 3.2,
+          "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fvideos%2Fscene_1_c7bf_shot_06_90f242.mp4?alt=media&token=020590ea-fe91-4136-adfa-a13fe627a4d9"
+        },
+        {
+          "provider": "seedance-2",
+          "task_id": "16e4f490-a064-4a76-8810-5ceb80652e78",
+          "created_at": "2026-04-18T11:41:39.639609+00:00",
+          "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fvideos%2Fscene_1_c7bf_shot_06_8b0d75.mp4?alt=media&token=f90e24ef-ad24-4b6e-8465-8e5cd92eb3c5"
+        },
+        {
+          "provider": "seedance-2",
+          "task_id": "397add78-bd65-4bb7-b069-391d85a71efd",
+          "created_at": "2026-04-19T07:41:13.880713+00:00",
+          "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fvideos%2Fscene_1_c7bf_shot_06_4d3ddd.mp4?alt=media&token=f0d8e36a-ba04-4f93-b1e3-fa00c67cee6c"
+        }
+      ],
+      "characters": [
+        "WOMAN"
+      ],
+      "shot_type": "Tight 85mm on lips",
+      "location_angle": "right",
+      "visual_action": "Cinematic tight 85mm on the Woman's lips in the mirror, applying a bold streak of red lipstick. She wears a black expensive gown. Harsh, warm vanity bulbs illuminate her face intensely, contrasting with the minimal fill and sickly, cold cyan shadows in the out-of-focus background. Rich, moody palette with deep gold and burgundy tones. The suffocating luxury and fraught emotional character mirror a fractured psyche.",
+      "type": "Tight 85mm on lips",
+      "prompt": "Cinematic tight 85mm on the Woman's lips in the mirror, applying a bold streak of red lipstick. She wears a black expensive gown. Harsh, warm vanity bulbs illuminate her face intensely, contrasting with the minimal fill and sickly, cold cyan shadows in the out-of-focus background. Rich, moody palette with deep gold and burgundy tones. The suffocating luxury and fraught emotional character mirror a fractured psyche. realistic",
+      "image_url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Finpaints%2Fshot_06_edb471.png?alt=media&token=8808f7d5-e2ba-4d00-b8a5-19642f772235",
+      "provider": "gemini",
+      "video_prompt": "The scene starts with the woman infront of the mirror and starts applying lipstick like in the @image1 , then the camera  cuts to a close up of lips pressing together, smudging a heavy layer of bold red lipstick. The lips part slightly, taking a tense, angry breath and then camera cuts to close up of her face as she says \"It's pointless.. you don\u2019t have the courage.. Not for me.. Not for yourself!!\" then camera cuts to the guy seated on the bed exactly like in the @image2 . He says while slightly crying\"you've been with me since 15 years, you know its not that simple\" , Take the man reference from @image4 and woman references from @image3.",
+      "aspect_ratio": "16:9",
+      "video_url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fvideos%2Fscene_1_c7bf_shot_06_4d3ddd.mp4?alt=media&token=f0d8e36a-ba04-4f93-b1e3-fa00c67cee6c",
+      "created_at": "2026-04-17T17:34:33.658Z",
+      "order": 5,
+      "seedance_task_id": "397add78-bd65-4bb7-b069-391d85a71efd",
+      "video_status": "ready",
+      "video_settings": {
+        "element_list": [],
+        "end_frame_url": null,
+        "reference_media": [
+          {
+            "name": "Shot 5",
+            "type": "image",
+            "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/projects%2F6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fshots%2Fscene_1_c7bf_shot_05_adb937.png?alt=media&token=d5f2cca2-0f7b-4902-b383-17dae53d85ad"
+          },
+          {
+            "name": "Woman",
+            "type": "image",
+            "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/projects%2F6372a137-59e8-4abf-aff8-6e804a943f01%2Fassets%2FWOMAN%2Fmain_6372a137_59e8_4abf_aff8_6e804a943f01_episodes_inpaints_WOMAN_cc3f00.png?alt=media&token=0e3fc7d8-5cbb-4b5c-a198-9bfc30d5f47c"
+          },
+          {
+            "name": "Man",
+            "type": "image",
+            "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/projects%2F6372a137-59e8-4abf-aff8-6e804a943f01%2Fcharacters%2Fgen_MAN_013e71.png?alt=media&token=aee9cac0-80e0-4387-9ef8-2d158cf948b7"
+          }
+        ],
+        "source_video_duration": null,
+        "shot_type": "intelligence",
+        "source_video_url": null,
+        "provider": "seedance-2",
+        "quality": "pro",
+        "aspect_ratio": "16:9",
+        "multi_prompt": [],
+        "watermark": false,
+        "negative_prompt": "",
+        "sound": "on",
+        "voice_list": [],
+        "mode": "pro",
+        "cfg_scale": 0.5,
+        "multi_shot": true,
+        "duration": "10",
+        "keep_original_audio": false
+      },
+      "estimated_duration": 4,
+      "location": "INT. LUXURY APARTMENT"
+    },
+    {
+      "location": "INT. LUXURY APARTMENT",
+      "image_url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Finpaints%2Fshot_07_1ff851.png?alt=media&token=6bfb2a4c-b7a5-4b41-ba39-0677897cd132",
+      "ambient_scene": "The fraught, tense emotional character peaks. Still, dense air feels suffocating as the sharp golden-hour light from the doorway clashes with the dark interior.",
+      "error_message": "Video servers are temporarily overloaded. Please try again in a few minutes.",
+      "status": "inpainting",
+      "video_prompt": "The young woman in the black dress glaring at the man. She throws her arm out in an angry, confrontational gesture and says \"You\u2019ve had fifteen years to figure things out.\", she then steps closer to him and the camera cuts to her sitting on her knees beside his legs and holds his hands, and says \"I know you think you have a lot to loose, but if you marry her now, you will lose yourself, for once, so, please stop thinking about everybody else and for once , ONCE!! think about us\". She looks at him hopefully and almost about to smile, then the camera cuts to the guy looking down on her and with a pain in his eyes and starts crying low key and says \"You know, I can't...\", then the camera cuts to the woman, her eyes turns from hope to anger and she stands and turns the other way around to walk towards the mirror , you can take the mirror reference from @image4 . Take the references of man  from @image3 and woman from  @image2 .",
+      "visual_action": "Cinematic medium wide shot.  turns aggressively away from the mirror to face the bed, pointing into the man sitting on the bed. Harsh, warm vanity bulbs light her, while key cool ambient city light from large windows and minimal fill, Rich gold and burgundy luxury elements contrast the cold darkness. The claustrophobic atmosphere suggests frenetic energy and a fractured psyche. Shot on 35mm.",
+      "provider": "gemini",
+      "aspect_ratio": "16:9",
+      "order": 6,
+      "seedance_task_id": "f1b31890-d000-4590-9f8e-89d7cd150903",
+      "estimated_duration": 5,
+      "model_used": "gemini-3.1-flash-image-preview",
+      "id": "shot_07",
+      "location_id": "INT_LUXURY_APARTMENT",
+      "products": [],
+      "continuity_note": "Woman breaks away from the reflection, turning physically toward the left wall to confront the Man. Edit connects her turn to the space.",
+      "error_code": "PROVIDER_OVERLOAD",
+      "camera_direction": "Camera positioned in front of the mirror, looking past the Woman towards the bed on the left wall.",
+      "video_history": [
+        {
+          "provider": "seedance-2",
+          "task_id": "f1b31890-d000-4590-9f8e-89d7cd150903",
+          "created_at": "2026-04-18T11:12:38.762479+00:00",
+          "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fvideos%2Fscene_1_c7bf_shot_07_bbaa19.mp4?alt=media&token=013faf9f-e0b2-4ae6-b684-a71d9403d485"
+        }
+      ],
+      "characters": [
+        "WOMAN",
+        "MAN"
+      ],
+      "shot_type": "Medium Wide 35mm",
+      "location_angle": "left",
+      "type": "Medium Wide 35mm",
+      "video_url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fvideos%2Fscene_1_c7bf_shot_07_bbaa19.mp4?alt=media&token=013faf9f-e0b2-4ae6-b684-a71d9403d485",
+      "video_status": "ready",
+      "video_settings": {
+        "element_list": [],
+        "end_frame_url": null,
+        "reference_media": [
+          {
+            "name": "Woman",
+            "type": "image",
+            "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/projects%2F6372a137-59e8-4abf-aff8-6e804a943f01%2Fassets%2FWOMAN%2Fmain_6372a137_59e8_4abf_aff8_6e804a943f01_episodes_inpaints_WOMAN_cc3f00.png?alt=media&token=0e3fc7d8-5cbb-4b5c-a198-9bfc30d5f47c"
+          },
+          {
+            "name": "Man",
+            "type": "image",
+            "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/projects%2F6372a137-59e8-4abf-aff8-6e804a943f01%2Fcharacters%2Fgen_MAN_013e71.png?alt=media&token=aee9cac0-80e0-4387-9ef8-2d158cf948b7"
+          },
+          {
+            "name": "Shot 6",
+            "type": "image",
+            "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/projects%2F6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fshots%2Fscene_1_c7bf_shot_06_90054a.png?alt=media&token=3e926c9a-2ca3-47e1-82c4-1c50273343f2"
+          }
+        ],
+        "source_video_duration": null,
+        "shot_type": "intelligence",
+        "source_video_url": null,
+        "provider": "seedance-2",
+        "quality": "pro",
+        "aspect_ratio": "16:9",
+        "multi_prompt": [],
+        "watermark": false,
+        "negative_prompt": "",
+        "sound": "on",
+        "voice_list": [],
+        "mode": "pro",
+        "cfg_scale": 0.5,
+        "multi_shot": false,
+        "duration": "15",
+        "keep_original_audio": false
+      },
+      "created_at": "2026-04-17T17:34:33.659Z",
+      "prompt": "Cinematic medium wide shot.  turns aggressively away from the mirror to face the bed, pointing into the man sitting on the bed. Harsh, warm vanity bulbs light her, while key cool ambient city light from large windows and minimal fill, Rich gold and burgundy luxury elements contrast the cold darkness. The claustrophobic atmosphere suggests frenetic energy and a fractured psyche. Shot on 35mm. realistic"
+    },
+    {
+      "model_used": "gemini-3-pro-image-preview",
+      "id": "shot_08",
+      "location_id": "INT_LUXURY_APARTMENT",
+      "error_message": null,
+      "continuity_note": "Cut from the tilt-up to the terrifying realization: the Man who was just there is gone. Absolute spatial shift to emptiness.",
+      "ambient_scene": "The psychological threshold of decay is palpable. Still, dense air hangs over the empty bed, wrapped in a deeply isolated and tense silence.",
+      "image_url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/projects%2F6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fshots%2Fscene_1_c7bf_shot_08_917ff9.png?alt=media&token=5e732cc9-63e8-496f-9df7-e67118e15dbf",
+      "status": "rendered",
+      "video_prompt": "The camera pushes incredibly slowly toward the empty, messy bed. The dark blue sheets are crumpled, but nobody is there. The room feels deadly still and abandoned.",
+      "video_history": [
+        {
+          "prompt": "The camera pushes incredibly slowly toward the empty, messy bed. The dark blue sheets are crumpled, but nobody is there. The room feels deadly still and abandoned.",
+          "provider": "piapi-kling-3.0",
+          "sound": true,
+          "duration": 5,
+          "created_at": "2026-04-17 18:34:11.292435+00:00",
+          "aspect_ratio": "16:9",
+          "mode": "std",
+          "task_id": "1646b1b2-adbb-4f74-984f-53f5940dc65e",
+          "end_frame": false,
+          "credits_charged": 3.2,
+          "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fvideos%2Fscene_1_c7bf_shot_08_ffa703.mp4?alt=media&token=9d6d1fba-1e92-4771-82cb-ef8102d90fbb"
+        }
+      ],
+      "characters": [],
+      "shot_type": "Wide 35mm",
+      "location_angle": "left",
+      "visual_action": "Cinematic wide 35mm. The massive bed with a deep navy velvet headboard against the dark teal wall is completely EMPTY. Chaotic scattered expensive silks lie on it. Key cool ambient city light streams through large windows, with minimal fill casting deep, sickly cold cyan shadows across the space, building suspense. Rich, moody palette highlighting the intricate gold-leaf paneling. The isolated, claustrophobic room feels suspended in time, emphasizing the oppressive, suffocating luxury and fractured psyche.",
+      "type": "Wide 35mm",
+      "prompt": "Cinematic wide 35mm. The massive bed with a deep navy velvet headboard against the dark teal wall is completely EMPTY. Chaotic scattered expensive silks lie on it. Key cool ambient city light streams through large windows, with minimal fill casting deep, sickly cold cyan shadows across the space, building suspense. Rich, moody palette highlighting the intricate gold-leaf paneling. The isolated, claustrophobic room feels suspended in time, emphasizing the oppressive, suffocating luxury and fractured psyche. realistic",
+      "video_settings": {
+        "element_list": [],
+        "end_frame_url": null,
+        "reference_media": [],
+        "source_video_duration": null,
+        "shot_type": "intelligence",
+        "source_video_url": null,
+        "quality": "fast",
+        "provider": "kling-v3",
+        "aspect_ratio": "16:9",
+        "multi_prompt": [],
+        "watermark": false,
+        "negative_prompt": "",
+        "duration": "5",
+        "voice_list": [],
+        "mode": "std",
+        "cfg_scale": 0.5,
+        "sound": "on",
+        "multi_shot": true,
+        "keep_original_audio": false
+      },
+      "provider": "gemini",
+      "video_url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fvideos%2Fscene_1_c7bf_shot_08_ffa703.mp4?alt=media&token=9d6d1fba-1e92-4771-82cb-ef8102d90fbb",
+      "aspect_ratio": "16:9",
+      "video_status": "ready",
+      "created_at": "2026-04-17T17:34:33.659Z",
+      "order": 7,
+      "camera_direction": "Camera facing the left wall directly, framing the empty bed perfectly.",
+      "products": [
+        "LARGE_BEDROOM_MIRROR"
+      ],
+      "estimated_duration": 5,
+      "location": "INT. LUXURY APARTMENT"
+    },
+    {
+      "location": "INT. LUXURY APARTMENT",
+      "image_url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/projects%2F6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fshots%2Fscene_1_c7bf_shot_09_2a78ef.png?alt=media&token=734c6fa7-9dbe-4a54-b9b6-b1fb94925aae",
+      "ambient_scene": "The suffocating luxury gives way to a chilling, suspended isolation. The dense air and sharp vanity lights underscore the fraught, fractured reality.",
+      "error_message": "Generation timed out \u2014 servers may be busy. Please try again.",
+      "status": "rendered",
+      "video_prompt": "The scene starts with a low angle back shot of the woman in @image2   (Don't show her face). The camera pans towards her while she says \"Cut the bullshit and tell me when are you gonna man up, is it gonna be today or NOT??\". Then camera cuts to the trans woman in @image3  exactly standing infront of the mirror like in @image1 , all dressed up and make up done. She says (in male voice) \"...Not Yet\" and then we cut to a blank screen. Cinematic intensity needs to be present throughout the scene. Maintain gaps in dialogues to show tension and intensity. Take the trans woman face reference from @image3 . Take the mirror reference from @image1 . ",
+      "visual_action": "Cinematic tight 50mm on the colossal mirror. The reflection reveals the Woman Man, wearing a black expensive gown, with facial features unmistakably the Man's but softened with feminine makeup. Harsh, warm vanity bulbs intensely illuminate the face, contrasting heavily with the minimal fill that drops the background into deep, sickly cold cyan shadows. Rich gold and burgundy tones. The fraught, tense atmosphere of heavy, suffocating luxury crystallizes this fractured psyche reveal.",
+      "provider": "gemini",
+      "aspect_ratio": "16:9",
+      "order": 8,
+      "seedance_task_id": "92b13b8e-5aaf-4bfb-814b-57b89ec69063",
+      "estimated_duration": 8,
+      "model_used": "gemini-3-pro-image-preview",
+      "id": "shot_09",
+      "location_id": "INT_LUXURY_APARTMENT",
+      "continuity_note": "Final reveal. Cut from the empty bed to the mirror. The fractured identity is unified in this single, terrifying reflection.",
+      "products": [
+        "EARRINGS"
+      ],
+      "error_code": "GENERATION_TIMEOUT",
+      "camera_direction": "Camera shoots directly into the mirror on the right wall, capturing the final unified reflection.",
+      "video_history": [
+        {
+          "prompt": "The person with long dark hair and striking red lipstick stares directly into the mirror with dead, unblinking eyes. A microscopic, unnerving tilt of the head occurs. Absolute eerie stillness.",
+          "provider": "piapi-kling-3.0",
+          "sound": true,
+          "duration": 5,
+          "created_at": "2026-04-17 18:33:39.166982+00:00",
+          "aspect_ratio": "16:9",
+          "mode": "std",
+          "task_id": "ef051db9-024e-4060-98b7-3426e2e2a95b",
+          "end_frame": false,
+          "credits_charged": 3.2,
+          "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fvideos%2Fscene_1_c7bf_shot_09_078db8.mp4?alt=media&token=27a9a9b3-e516-456c-aad9-99371c589dca"
+        },
+        {
+          "provider": "seedance-2",
+          "task_id": "734ff350-9a78-467d-9543-0db637ad0a50",
+          "created_at": "2026-04-18T12:34:28.021022+00:00",
+          "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fvideos%2Fscene_1_c7bf_shot_09_41de8a.mp4?alt=media&token=14458b78-938d-4dab-b1ed-110ad4644bef"
+        },
+        {
+          "provider": "seedance-2",
+          "task_id": "c85960bf-f691-4fda-bf2b-652e4ad34523",
+          "created_at": "2026-04-18T14:56:39.826165+00:00",
+          "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fvideos%2Fscene_1_c7bf_shot_09_26953f.mp4?alt=media&token=1d10c715-9bc0-4b1b-a89e-5a46fabec462"
+        },
+        {
+          "provider": "seedance-2",
+          "task_id": "92b13b8e-5aaf-4bfb-814b-57b89ec69063",
+          "created_at": "2026-04-18T19:32:29.527679+00:00",
+          "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fvideos%2Fscene_1_c7bf_shot_09_aa9726.mp4?alt=media&token=4cca32a4-1a58-48e1-a44e-0296b34625c1"
+        }
+      ],
+      "characters": [
+        "WOMAN_MAN"
+      ],
+      "shot_type": "Tight 50mm on eyes",
+      "location_angle": "right",
+      "type": "Tight 50mm on eyes",
+      "video_url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fb406c276-e787-48c5-97ed-4bcc121578a9%2Fvideos%2Fscene_1_c7bf_shot_09_aa9726.mp4?alt=media&token=4cca32a4-1a58-48e1-a44e-0296b34625c1",
+      "video_status": "ready",
+      "video_settings": {
+        "element_list": [],
+        "end_frame_url": null,
+        "reference_media": [
+          {
+            "name": "Woman",
+            "type": "image",
+            "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/projects%2F6372a137-59e8-4abf-aff8-6e804a943f01%2Fassets%2FWOMAN%2Fmain_6372a137_59e8_4abf_aff8_6e804a943f01_episodes_inpaints_WOMAN_cc3f00.png?alt=media&token=0e3fc7d8-5cbb-4b5c-a198-9bfc30d5f47c"
+          },
+          {
+            "name": "Woman Man",
+            "type": "image",
+            "url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/projects%2F6372a137-59e8-4abf-aff8-6e804a943f01%2Fassets%2FWOMAN_MAN%2Fmain_6372a137_59e8_4abf_aff8_6e804a943f01_episodes_inpaints_WOMAN_MAN_891f40.png?alt=media&token=343fb82b-13aa-4202-a2cc-0c9f594384ee"
+          }
+        ],
+        "source_video_duration": null,
+        "shot_type": "intelligence",
+        "source_video_url": null,
+        "provider": "seedance-2",
+        "quality": "pro",
+        "aspect_ratio": "16:9",
+        "multi_prompt": [],
+        "watermark": false,
+        "negative_prompt": "",
+        "sound": "on",
+        "voice_list": [],
+        "mode": "pro",
+        "cfg_scale": 0.5,
+        "duration": "15",
+        "multi_shot": true,
+        "keep_original_audio": false
+      },
+      "created_at": "2026-04-17T17:34:33.659Z",
+      "prompt": "Cinematic tight 50mm on the colossal mirror. The reflection reveals the Woman Man, wearing a black expensive gown, with facial features unmistakably the Man's but softened with feminine makeup. Harsh, warm vanity bulbs intensely illuminate the face, contrasting heavily with the minimal fill that drops the background into deep, sickly cold cyan shadows. Rich gold and burgundy tones. The fraught, tense atmosphere of heavy, suffocating luxury crystallizes this fractured psyche reveal. realistic"
+    },
+    {
+      "id": "shot_10 ",
+      "location_id": "INT_LUXURY_APARTMENT",
+      "products": [],
+      "created_at": "2026-04-17T19:04:59.996Z",
+      "order": 9,
+      "status": "draft",
+      "video_prompt": "",
+      "characters": [],
+      "shot_type": "Wide Shot",
+      "visual_action": "A woman gets dressed in front of a mirror in a messy, expensive bedroom while a man sits out of focus on the bed. She struggles with her dress zipper, fixes it, and they argue. She drops an earring, applies lipstick, and confronts him. She finishes getting ready, puts on heels, and grabs her bag. The camera pans up her body to reveal the man has vanished from the bed. She looks in the mirror, revealing her face is actually the man's face, softened and feminine.",
+      "location": "INT. LUXURY APARTMENT"
+    }
+  ]
+}

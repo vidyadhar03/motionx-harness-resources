@@ -1,0 +1,132 @@
+{
+  "request": "list the scenes in this project",
+  "model": "gemini-3.1-pro-preview",
+  "project_id": "6372a137-59e8-4abf-aff8-6e804a943f01",
+  "turns": 3,
+  "seconds": 15,
+  "tokens": {
+    "in": 3356,
+    "out": 129
+  },
+  "transcript": [
+    {
+      "turn": 1,
+      "model": [
+        {
+          "call": "list",
+          "args": {
+            "path": "/"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "tool_results": [
+        {
+          "call": "list",
+          "args": {
+            "path": "/"
+          },
+          "payload": {
+            "result": {
+              "path": "/",
+              "subcollections": [
+                "characters",
+                "episodes",
+                "locations",
+                "moodboard_options",
+                "products",
+                "scripts"
+              ],
+              "children": [
+                {
+                  "key": "b406c276-e787-48c5-97ed-4bcc121578a9",
+                  "title": "Not Yet",
+                  "status": "script_ingested",
+                  "type": "movie_script",
+                  "has_image": false
+                }
+              ],
+              "count": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "model": [
+        {
+          "call": "list",
+          "args": {
+            "path": "/Not Yet"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "tool_results": [
+        {
+          "call": "list",
+          "args": {
+            "path": "/Not Yet"
+          },
+          "payload": {
+            "result": {
+              "path": "/Not Yet",
+              "subcollections": [
+                "postprod",
+                "scenes"
+              ],
+              "children": [
+                {
+                  "key": "scene_1_c7bf",
+                  "title": "INT. LUXURY APARTMENT",
+                  "status": "draft",
+                  "scene_number": 1,
+                  "time": "NIGHT",
+                  "estimated_duration_seconds": 0,
+                  "characters": [
+                    "WOMAN",
+                    "MAN",
+                    "WOMAN_MAN"
+                  ],
+                  "has_image": false
+                },
+                {
+                  "key": "scene_3591cbd8",
+                  "title": "INT. LUXURY APARTMENT - NIGHT",
+                  "status": "draft",
+                  "scene_number": 2,
+                  "time": "NIGHT",
+                  "characters": [
+                    "Man"
+                  ],
+                  "products": [
+                    "The Bed",
+                    "Evening Heels",
+                    "Handbag",
+                    "Large Bedroom Mirror",
+                    "Lipstick"
+                  ],
+                  "has_image": false
+                }
+              ],
+              "count": 2
+            }
+          }
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "model": [
+        {
+          "text": "Here are the scenes currently in the \"Not Yet\" project:\n\n**Scene 1**\n*   **Slugline:** INT. LUXURY APARTMENT - NIGHT\n*   **Characters:** WOMAN, MAN, WOMAN_MAN\n\n**Scene 2**\n*   **Slugline:** INT. LUXURY APARTMENT - NIGHT\n*   **Characters:** Man\n*   **Products:** The Bed, Evening Heels, Handbag, Large Bedroom Mirror, Lipstick"
+        }
+      ]
+    }
+  ]
+}

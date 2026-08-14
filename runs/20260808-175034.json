@@ -1,0 +1,559 @@
+{
+  "request": "what is this project about",
+  "model": "gemini-3.1-pro-preview",
+  "project_id": "6372a137-59e8-4abf-aff8-6e804a943f01",
+  "turns": 4,
+  "seconds": 21,
+  "tokens": {
+    "in": 15476,
+    "out": 482
+  },
+  "transcript": [
+    {
+      "turn": 1,
+      "model": [
+        {
+          "call": "read",
+          "args": {
+            "path": "/"
+          }
+        },
+        {
+          "call": "list",
+          "args": {
+            "path": "/"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "tool_results": [
+        {
+          "call": "read",
+          "args": {
+            "path": "/"
+          },
+          "payload": {
+            "result": {
+              "path": "/",
+              "schema": {
+                "aspect_ratio": "str",
+                "cache_name": "NoneType",
+                "candidate_archetypes": "list",
+                "created_at": "DatetimeWithNanoseconds",
+                "default_episode_id": "str",
+                "genre": "str",
+                "id": "str",
+                "is_dashboard_template": "bool",
+                "is_global": "bool",
+                "is_public": "bool",
+                "moodboard": "list",
+                "moodboard_image_url": "str",
+                "moodboard_source": "str",
+                "moodboard_style": "dict",
+                "org_id": "NoneType",
+                "owner_id": "str",
+                "runtime_seconds": "int",
+                "script_file_url": "str",
+                "script_status": "str",
+                "selected_mood_id": "str",
+                "source_script_id": "str",
+                "status": "str",
+                "style": "str",
+                "taxonomy_measured_metrics": "dict",
+                "taxonomy_profile": "dict",
+                "team_ids": "list",
+                "tenant_id": "NoneType",
+                "title": "str",
+                "type": "str",
+                "ugc_setup": "NoneType",
+                "updated_at": "DatetimeWithNanoseconds"
+              },
+              "node": {
+                "owner_id": "vzRHwyQfpCbmaHRYtVqFiwvf5zQ2",
+                "default_episode_id": "b406c276-e787-48c5-97ed-4bcc121578a9",
+                "script_status": "ready",
+                "taxonomy_measured_metrics": {
+                  "character_interiority": 10,
+                  "fragmentation_whitespace": 10,
+                  "thematic_subtext": 10,
+                  "dialogue_action_ratio": 9,
+                  "scene_duration_pacing": 1
+                },
+                "status": "active",
+                "team_ids": [],
+                "ugc_setup": null,
+                "created_at": "2026-04-17 16:54:43.915618+00:00",
+                "selected_mood_id": "custom_upload",
+                "id": "6372a137-59e8-4abf-aff8-6e804a943f01",
+                "moodboard_image_url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fmoodboard%2Fcustom_reference_9ad1dc25.png?alt=media&token=e5129d37-4858-4a8e-bdac-71dd0438d08d",
+                "style": "realistic",
+                "moodboard_source": "custom_upload",
+                "is_public": true,
+                "source_script_id": "67297dab-adbc-4803-b70e-b80e2f0853d2",
+                "candidate_archetypes": [
+                  {
+                    "ideal_metrics": {
+                      "character_interiority": 9,
+                      "fragmentation_whitespace": 7,
+                      "thematic_subtext": 9,
+                      "dialogue_action_ratio": 7,
+                      "scene_duration_pacing": 7
+                    },
+                    "name": "New Queer Cinema Transgression",
+                    "blueprint": {
+                      "emotional_philosophy": "Rebellious, challenging heteronormative structures",
+                      "lighting_color": "High-contrast visual noise, gritty film stock",
+                      "lens_rules": "Wide to normal, reclaiming the cinematic gaze",
+                      "camera_movement": "Erratic handheld, explicit unapologetic framing"
+                    },
+                    "archetype_key": "New_Queer_Cinema_Transgression",
+                    "match_percentage": 68
+                  },
+                  {
+                    "ideal_metrics": {
+                      "character_interiority": 7,
+                      "fragmentation_whitespace": 6,
+                      "thematic_subtext": 7,
+                      "dialogue_action_ratio": 8,
+                      "scene_duration_pacing": 6
+                    },
+                    "name": "Desktop / Screenlife Confinement",
+                    "blueprint": {
+                      "emotional_philosophy": "Digital isolation, mediated reality",
+                      "lighting_color": "Harsh monitor glow, editing dictated by cursor and window switching",
+                      "lens_rules": "Ultra-wide webcam distortion, flat UI overlays",
+                      "camera_movement": "Static webcam framing, simulated digital zooms"
+                    },
+                    "archetype_key": "Desktop_Screenlife_Confinement",
+                    "match_percentage": 65
+                  },
+                  {
+                    "ideal_metrics": {
+                      "character_interiority": 7,
+                      "fragmentation_whitespace": 6,
+                      "thematic_subtext": 8,
+                      "dialogue_action_ratio": 4,
+                      "scene_duration_pacing": 4
+                    },
+                    "name": "Rural / Country Noir",
+                    "blueprint": {
+                      "emotional_philosophy": "Isolation, criminal underbelly in forgotten spaces",
+                      "lighting_color": "Sun-bleached, harsh daylight shadows, dusty palettes",
+                      "lens_rules": "Wide lenses for landscapes, tight lenses for interiors",
+                      "camera_movement": "Static wide vistas contrasting with claustrophobic interiors"
+                    },
+                    "archetype_key": "Rural_Country_Noir",
+                    "match_percentage": 65
+                  },
+                  {
+                    "ideal_metrics": {
+                      "character_interiority": 9,
+                      "fragmentation_whitespace": 5,
+                      "thematic_subtext": 10,
+                      "dialogue_action_ratio": 3,
+                      "scene_duration_pacing": 3
+                    },
+                    "name": "Cosmic / Lovecraftian Dread",
+                    "blueprint": {
+                      "emotional_philosophy": "Human insignificance, terror of the incomprehensible",
+                      "lighting_color": "Impenetrable, void-like shadows obscuring threats",
+                      "lens_rules": "Extreme wide angles, non-Euclidean production design",
+                      "camera_movement": "Slow reveals, emphasizing vast scale disparities"
+                    },
+                    "archetype_key": "Cosmic_Lovecraftian_Dread",
+                    "match_percentage": 64
+                  },
+                  {
+                    "ideal_metrics": {
+                      "character_interiority": 6,
+                      "fragmentation_whitespace": 4,
+                      "thematic_subtext": 9,
+                      "dialogue_action_ratio": 7,
+                      "scene_duration_pacing": 4
+                    },
+                    "name": "Planimetric Corporate Satire",
+                    "blueprint": {
+                      "emotional_philosophy": "Soul-crushing bureaucracy, mechanized human existence",
+                      "lighting_color": "Cold fluorescent lighting, sterile off-white palettes",
+                      "lens_rules": "Normal to wide, extremely rigid grid-like compositions",
+                      "camera_movement": "Rigid lateral tracking, geometric pans"
+                    },
+                    "archetype_key": "Planimetric_Corporate_Satire",
+                    "match_percentage": 64
+                  }
+                ],
+                "tenant_id": null,
+                "moodboard_style": {
+                  "name": "Gothic Golden Threshold",
+                  "atmosphere": "Regal, mysterious, and imposing. An emotionally guarded, majestic presence standing at a threshold, evoking a sense of ancient power and quiet tension.",
+                  "texture": "Fine 35mm film grain structure, smooth organic skin textures contrasted against the chipped, highly tactile gold-leaf filigree of the doors. Matte light-absorbing fabric on the costume.",
+                  "lighting": "Soft, diffused frontal-left key light on the subject with gentle falloff. Warm, hard directional light grazing the ornate golden doors to highlight intricate textures. Deep shadows in the background with a high key-to-fill ratio, creating a moody, chiaroscuro effect.",
+                  "color_palette": "Deep obsidian blacks, rich antique gold, cool midnight cyan background, and warm peachy skin tones. High contrast color separation between warm foreground elements and cool atmospheric background."
+                },
+                "moodboard": [],
+                "aspect_ratio": "16:9",
+                "updated_at": "2026-05-24 08:09:52.417884+00:00",
+                "type": "movie",
+                "script_file_url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/temp%2Fscripts%2F6372a137-59e8-4abf-aff8-6e804a943f01%2F59a1301a-a1f8-4783-b05f-40faf7c67dbf%2Fscript.txt?alt=media&token=360d4eaa-1899-4307-ab6c-a31b879282f7",
+                "is_global": false,
+                "cache_name": null,
+                "taxonomy_profile": {
+                  "name": "Custom \u2014 Gothic Golden Threshold",
+                  "ideal_metrics": {},
+                  "blueprint": {
+                    "emotional_philosophy": "Regal, mysterious, and imposing. An emotionally guarded, majestic presence standing at a threshold, evoking a sense of ancient power and quiet tension.",
+                    "camera_movement": "Slow, deliberate dolly push-ins emphasizing the symmetry and the subject's quiet authority. Static locked-off compositions for dramatic portraiture.",
+                    "lens_rules": "40mm-50mm normal prime lenses, shot at around T2.8 for natural perspective with subtle depth of field separation, allowing the foreground doors and subject to remain sharply defined while softening the distant balcony.",
+                    "lighting_color": "Soft, diffused frontal-left key light on the subject with gentle falloff. Warm, hard directional light grazing the ornate golden doors to highlight intricate textures. Deep shadows in the background with a high key-to-fill ratio, creating a moody, chiaroscuro effect."
+                  },
+                  "measured_metrics": {
+                    "fragmentation_whitespace": 10,
+                    "character_interiority": 10,
+                    "thematic_subtext": 10,
+                    "dialogue_action_ratio": 9,
+                    "scene_duration_pacing": 1
+                  },
+                  "locked_at": "2026-04-17T17:02:00.380151",
+                  "match_percentage": 100,
+                  "locked": true,
+                  "archetype_key": "custom_upload"
+                },
+                "genre": "Drama, suspense",
+                "org_id": null,
+                "title": "Not Yet",
+                "runtime_seconds": 120,
+                "is_dashboard_template": true
+              }
+            }
+          }
+        },
+        {
+          "call": "list",
+          "args": {
+            "path": "/"
+          },
+          "payload": {
+            "result": {
+              "path": "/",
+              "subcollections": [
+                "characters",
+                "episodes",
+                "locations",
+                "moodboard_options",
+                "products",
+                "scripts"
+              ],
+              "children": [
+                {
+                  "key": "b406c276-e787-48c5-97ed-4bcc121578a9",
+                  "title": "Not Yet",
+                  "status": "script_ingested",
+                  "type": "movie_script",
+                  "has_image": false
+                }
+              ],
+              "count": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "model": [
+        {
+          "call": "list",
+          "args": {
+            "path": "/Not Yet"
+          }
+        },
+        {
+          "call": "list",
+          "args": {
+            "path": "/bible/characters"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "tool_results": [
+        {
+          "call": "list",
+          "args": {
+            "path": "/Not Yet"
+          },
+          "payload": {
+            "result": {
+              "path": "/Not Yet",
+              "subcollections": [
+                "postprod",
+                "scenes"
+              ],
+              "children": [
+                {
+                  "key": "scene_1_c7bf",
+                  "title": "INT. LUXURY APARTMENT",
+                  "status": "draft",
+                  "scene_number": 1,
+                  "time": "NIGHT",
+                  "estimated_duration_seconds": 0,
+                  "characters": [
+                    "WOMAN",
+                    "MAN",
+                    "WOMAN_MAN"
+                  ],
+                  "has_image": false
+                },
+                {
+                  "key": "scene_3591cbd8",
+                  "title": "INT. LUXURY APARTMENT - NIGHT",
+                  "status": "draft",
+                  "scene_number": 2,
+                  "time": "NIGHT",
+                  "characters": [
+                    "Man"
+                  ],
+                  "products": [
+                    "The Bed",
+                    "Evening Heels",
+                    "Handbag",
+                    "Large Bedroom Mirror",
+                    "Lipstick"
+                  ],
+                  "has_image": false
+                }
+              ],
+              "count": 2
+            }
+          }
+        },
+        {
+          "call": "list",
+          "args": {
+            "path": "/bible/characters"
+          },
+          "payload": {
+            "result": {
+              "path": "/bible/characters",
+              "count": 3,
+              "children": [
+                {
+                  "key": "MAN",
+                  "title": "Man",
+                  "status": "active",
+                  "type": "human",
+                  "has_image": true
+                },
+                {
+                  "key": "WOMAN",
+                  "title": "Woman",
+                  "status": "active",
+                  "type": "human",
+                  "has_image": true
+                },
+                {
+                  "key": "WOMAN_MAN",
+                  "title": "Woman Man",
+                  "status": "active",
+                  "type": "human",
+                  "has_image": true
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "model": [
+        {
+          "call": "read",
+          "args": {
+            "path": "/Not Yet/sc1"
+          }
+        },
+        {
+          "call": "read",
+          "args": {
+            "path": "/Not Yet/sc2"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "tool_results": [
+        {
+          "call": "read",
+          "args": {
+            "path": "/Not Yet/sc1"
+          },
+          "payload": {
+            "result": {
+              "path": "/Not Yet/sc1",
+              "schema": {
+                "characters": "list",
+                "context_layer": "dict",
+                "created_at": "DatetimeWithNanoseconds",
+                "dialogues": "list",
+                "estimated_duration_seconds": "int",
+                "id": "str",
+                "location": "str",
+                "location_id": "str",
+                "products": "list",
+                "scene_number": "int",
+                "set_design": "dict",
+                "slugline": "str",
+                "status": "str",
+                "synopsis": "str",
+                "time": "str",
+                "visual_prompt": "str"
+              },
+              "node": {
+                "estimated_duration_seconds": 0,
+                "location_id": "INT_LUXURY_APARTMENT",
+                "status": "draft",
+                "dialogues": [],
+                "synopsis": "A woman gets dressed in front of a mirror in a messy, expensive bedroom while a man sits out of focus on the bed. She struggles with her dress zipper, fixes it, and they argue. She drops an earring, applies lipstick, and confronts him. She finishes getting ready, puts on heels, and grabs her bag. The camera pans up her body to reveal the man has vanished from the bed. She looks in the mirror, revealing her face is actually the man's face, softened and feminine.",
+                "created_at": "2026-04-17 16:59:43.332000+00:00",
+                "context_layer": {
+                  "gaffer": {
+                    "practicals": "Vanity mirror lights surrounding the glass, a bedside lamp casting a dim pool on the messy bed",
+                    "shifts": "Starts with a warm balance from the vanity, but as she turns away and the man vanishes, the cooler, isolating city light dominates",
+                    "key_light": "Cool ambient city light streaming through large windows contrasted by harsh, warm vanity bulbs",
+                    "fill": "Minimal fill, creating deep shadows to obscure the man's features in the background and build suspense"
+                  },
+                  "vfx": {
+                    "atmospheric": "Heavy, claustrophobic air with a subtle, realistic haziness to give the luxury apartment a slightly stifling, dream-like feel",
+                    "environmental": [
+                      "Dust motes floating heavily in the window's light shafts",
+                      "Fingerprint smudges and slight optical distortion on the edges of the mirror",
+                      "Subtle chromatic aberration around the edges of the frame to heighten psychological tension"
+                    ]
+                  },
+                  "colorist": {
+                    "contrast": "High contrast with deep, crushed blacks to swallow the background details and keep the man obscured",
+                    "grade": "Rich, moody palette with deep gold and burgundy tones for the luxury elements, contrasted by sickly, cold cyan shadows",
+                    "shifts": "Shifts from a rich, opulent warmth to a sterile, cold green-blue as the psychological twist is revealed in the mirror"
+                  },
+                  "key_grip": {
+                    "movement_style": "Slow, creeping dollies and a precise, calculated tilt-up from the heels to the face, maintaining a shallow depth of field until the final focus pull to the mirror",
+                    "camera_energy": "Smooth, voyeuristic, and deliberate, shifting to an unnerving, absolute stillness at the final reveal"
+                  },
+                  "subtext": "An internal struggle of identity and dysmorphia externalized. The man in the background represents the protagonist's suppressed self or psychological weight. The camera should treat the woman as fractured, shooting her through reflections and shallow focus, until the final tilt unifies the fractured identity into a chilling, singular truth.",
+                  "hair_makeup": [
+                    "WOMAN: Immaculate but strained presentation, flawless skin with bold red lipstick applied aggressively during the scene",
+                    "MAN: Disheveled, shadowed, features deliberately obscured, messy unkempt hair",
+                    "WOMAN_MAN: A seamless, uncanny blend; the man's distinct facial structure smoothed out with foundation and feminine contouring, wearing the bold lipstick the woman just applied"
+                  ]
+                },
+                "slugline": "INT. LUXURY APARTMENT",
+                "id": "scene_1_c7bf",
+                "time": "NIGHT",
+                "set_design": {
+                  "image_urls": {
+                    "left": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fassets%2Fset_design_scene_1_c7bf_left_b3fcbf.jpg?alt=media&token=0bd68fe6-c815-4d70-ab63-9438488e4339",
+                    "back": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fepisodes%2Fset_inpaints%2Fscene_1_c7bf_back_12e755.png?alt=media&token=7cf42d0e-8c33-4391-b502-8ebfad193d84",
+                    "right": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fassets%2Fset_design_scene_1_c7bf_right_42d0d5.jpg?alt=media&token=793105e6-d6e0-406c-be31-7943d8c53fff",
+                    "front": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fassets%2Fset_design_scene_1_c7bf_front_60c8ae.jpg?alt=media&token=af159edb-0aae-4383-8d53-66f0fa347f0b"
+                  },
+                  "atmosphere": "The room exudes an atmosphere of heavy, suffocating luxury\u2014a psychological threshold where opulence meets decay. The air feels still and dense, carrying the implied scent of expensive, heavy floral perfume undercut by the faint, dry ash of a cooling hearth. Sharp, intense golden-hour light slices violently through the doorway, clashing with the oppressive, moody shadows of the dark teal and navy interior. The emotional character is fraught and tense, mirroring a fractured psyche. The chaotic scatter of expensive silks and leathers on the floor suggests a recent, frenetic energy, leaving behind a space that feels deeply isolated, claustrophobic, and suspended in time.",
+                  "architecture_notes": "The architecture is rooted in classic Gothic opulence updated for high-end luxury. The walls are finished in a deeply saturated dark teal, adorned with intricate, rectangular gold-leaf paneling and wainscoting. The ceiling is high and off-white, bordered by massive, multi-tiered classical crown molding. The flooring consists of wide-plank, distressed dark mahogany hardwood with a slight reflective sheen, grounding the space in dark, heavy tones. The far wall features two tall, deeply recessed windows obscured by floor-to-ceiling drapes, and imposing, heavy dark wood double doors featuring elaborate gold filigree panels. The near wall is anchored by a grand, intricately carved black marble fireplace mantel.",
+                  "is_locked": true,
+                  "burst_status": null,
+                  "burst_video_url": null,
+                  "burst_error": null,
+                  "anchor_image_url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fassets%2Fset_design_scene_1_c7bf_front_60c8ae.jpg?alt=media&token=af159edb-0aae-4383-8d53-66f0fa347f0b",
+                  "image_status": "ready",
+                  "image_url": "https://firebasestorage.googleapis.com/v0/b/motionx-studio.firebasestorage.app/o/6372a137-59e8-4abf-aff8-6e804a943f01%2Fassets%2Fset_design_scene_1_c7bf_front_60c8ae.jpg?alt=media&token=af159edb-0aae-4383-8d53-66f0fa347f0b",
+                  "error": null,
+                  "topography_360": {
+                    "left": "Facing 90 degrees left, the wall is dark teal with continuous gold rectangular paneling. It grounds a massive, king-sized bed featuring a deep navy velvet, diamond-tufted headboard. The bed is a chaotic mound of heavy silk and velvet linens in deep blues and silvers. The continuous mahogany hardwood floor and the thick ceiling crown molding span the length of this wall. The windows, heavy drapes, and ajar double doors from the front wall are completely out of view.",
+                    "back": "The near wall (behind the camera) serves as a flatter, grounding anchor for the room, contrasting the deep lighting of the front. It features a grand, black marble fireplace mantel flanked by the continuous gold-trimmed teal wainscoting seen throughout the room. Above the mantel hangs an imposing, dark oil painting. To the sides of the hearth sit two deep, tufted navy leather wingback chairs. Faintly glowing embers cast a warm amber under-light. The continuous mahogany hardwood floor and upper crown molding tie the space together, but the deep vanishing points and blinding hallway light of the front wall are entirely absent.",
+                    "right": "Facing 90 degrees right, the heavily textured dark teal wall is dominated by a colossal, floor-to-ceiling antique mirror enclosed in a thick, highly ornate gold-leaf frame. The mirror reflects the dark walls, the scattered floor mess, and the navy bed from the opposing wall. The continuous distressed mahogany hardwood floor runs along the baseboards, while the off-white ceiling and crown molding frame the top. The intense golden light from the front doors is not directly visible, appearing only as a glowing reflection in the glass.",
+                    "front": "The far wall features a dark teal surface with gold paneling. Two tall dark-framed windows are heavily covered by thick brown velvet drapes. To the right, dark wood double doors with intricate gold filigree stand aggressively ajar, allowing a blinding slice of golden light to pierce the room. The continuous wide-plank distressed mahogany floor extends into this view, littered with crumpled silk dresses, stilettos, and a leather handbag. The multi-tiered crown molding borders the ceiling above."
+                  },
+                  "image_prompt": "An ultra-realistic cinematic still frame of an empty, opulent luxury bedroom from the FRONT angle, establishing a Gothic Golden Threshold aesthetic. The far wall is painted a moody, dark teal, accented with intricate rectangular gold paneling. Two tall, dark-framed windows are heavily obscured by thick, floor-to-ceiling brown velvet drapes. To the right, imposing dark wood double doors with elaborate gold filigree panels stand ajar, spilling a violently sharp, intense blade of golden-hour light from an adjacent hallway into the dim bedroom, creating long, dramatic shadows. The floor is continuous wide-plank distressed dark mahogany hardwood, littered with discarded luxury items: crumpled silk dresses, scattered stilettos, and a leather handbag. Above, an off-white ceiling is bordered by deep, multi-tiered classical crown molding, softly illuminated by a warm, diffuse amber gradient. High tension, photorealistic, moody atmosphere, 8k, volumetric lighting, NO PEOPLE, empty room."
+                },
+                "characters": [
+                  "WOMAN",
+                  "MAN",
+                  "WOMAN_MAN"
+                ],
+                "scene_number": 1,
+                "products": [],
+                "location": "INT. LUXURY APARTMENT",
+                "visual_prompt": ""
+              }
+            }
+          }
+        },
+        {
+          "call": "read",
+          "args": {
+            "path": "/Not Yet/sc2"
+          },
+          "payload": {
+            "result": {
+              "path": "/Not Yet/sc2",
+              "schema": {
+                "cast_ids": "list",
+                "characters": "list",
+                "created_at": "DatetimeWithNanoseconds",
+                "header": "str",
+                "id": "str",
+                "location": "str",
+                "location_id": "str",
+                "products": "list",
+                "scene_number": "int",
+                "slugline": "str",
+                "status": "str",
+                "summary": "str",
+                "synopsis": "str",
+                "time": "str"
+              },
+              "node": {
+                "header": "INT. LUXURY APARTMENT - NIGHT",
+                "id": "scene_3591cbd8",
+                "time": "NIGHT",
+                "created_at": "2026-04-20 21:17:48.938000+00:00",
+                "location_id": "INT_LUXURY_APARTMENT",
+                "summary": "The room is suffocatingly silent. The Man sits on the edge of The Bed, fully visible now, wearing standard men's clothing. Scattered on the floor nearby lie the Evening Heels and the Handbag. He slowly raises his head, looking directly into the Large Bedroom Mirror across the room. The reflection is just him, stark and unglamorous. Trembling slightly, he reaches out and picks up the Lipstick left on the vanity. He turns the small metal tube over in his hands, tracing its edges as the weight of his own denial settles in, before finally burying his face in his hands.",
+                "status": "draft",
+                "scene_number": 2,
+                "synopsis": "The room is suffocatingly silent. The Man sits on the edge of The Bed, fully visible now, wearing standard men's clothing. Scattered on the floor nearby lie the Evening Heels and the Handbag. He slowly raises his head, looking directly into the Large Bedroom Mirror across the room. The reflection is just him, stark and unglamorous. Trembling slightly, he reaches out and picks up the Lipstick left on the vanity. He turns the small metal tube over in his hands, tracing its edges as the weight of his own denial settles in, before finally burying his face in his hands.",
+                "products": [
+                  "The Bed",
+                  "Evening Heels",
+                  "Handbag",
+                  "Large Bedroom Mirror",
+                  "Lipstick"
+                ],
+                "location": "INT. LUXURY APARTMENT",
+                "cast_ids": [
+                  "Man"
+                ],
+                "characters": [
+                  "Man"
+                ],
+                "slugline": "INT. LUXURY APARTMENT - NIGHT"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "turn": 4,
+      "model": [
+        {
+          "text": "This project, titled **\"Not Yet\"**, is a short psychological drama and suspense film that explores themes of identity, dysmorphia, and suppressed self through a highly visual, surreal lens. \n\n**The Look and Feel:**\nThe project is driven by a \"Gothic Golden Threshold\" aesthetic\u2014it's meant to feel regal, mysterious, and tense. It contrasts heavy, claustrophobic luxury (dark teal walls, gold wainscoting, velvet) with harsh, moody lighting, creating an environment that feels like a psychological threshold where opulence meets internal decay. \n\n**The Story:**\nThe film uses a fractured narrative to externalize a deep internal struggle (likely gender dysphoria or identity conflict), playing out across two scenes set in a messy, high-end luxury bedroom:\n\n*   **Scene 1:** We watch a woman getting dressed in front of a mirror, struggling with a dress zipper, applying red lipstick, and arguing with a man who sits out of focus on the bed behind her. As the scene progresses and she finishes getting ready, the camera reveals the man on the bed has vanished. When she looks in the mirror, the ultimate twist is revealed: her face is actually the man's face, softened with feminine makeup. \n*   **Scene 2:** The illusion is broken, leaving a suffocatingly silent room. The man now sits alone on the edge of the bed in standard men's clothing, surrounded by the discarded heels and handbag from the previous scene. He looks into the mirror to see only his stark, unglamorous reflection. Trembling, he picks up the lipstick from the vanity, feeling the weight of his denial, and buries his face in his hands.\n\nUltimately, the project is a poignant, suspenseful exploration of a protagonist confronting the reality of who they are versus who they have suppressed."
+        }
+      ]
+    }
+  ]
+}
