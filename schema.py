@@ -1,5 +1,5 @@
 """
-MotionX harness — schema v1 (locked).
+MotionX harness — schema v1.1 (locked).
 
 Principle: reads tolerate the old shape, writes enforce this one. Nothing is
 migrated. The tool layer normalises legacy documents into these models via
@@ -12,9 +12,40 @@ The shot god object (~45 fields) is split along the four concerns it mixed:
     outputs           → Track / Take  (media, with provenance)
     execution state   → Run           (async jobs, provider receipts, cost)
 
-Field counts vs today: shot 45 → 11, scene 13 → 10, character 15 → 8.
+Field counts vs today: shot 45 → 12, scene 13 → 10, character 15 → 8.
 
-FINAL CHANGES — from the provider parameter audit across 18 outbound calls and
+v1.1 — HYBRID SHOOT SUPPORT
+The Dehleez series shoots practical and generated coverage against the same
+project tree. The additions below are what that requires, and no more. There is
+no hybrid mode, no parallel model, no branch in the tool layer:
+
+  + Shot.source          REQUIRED, no default on read. Whether this shot is
+                         generated or shot on camera. The one field that must
+                         never be inferred — a shot misread as generated is the
+                         spike's invisible ceiling with a crew standing around.
+  ~ Take.media_url       now Optional. Footage exists on a card for hours before
+                         ingest, and the moment of capture is the moment the
+                         metadata is accurate. Requiring a URL to write a take
+                         pushes on-set logging into a spreadsheet.
+  ~ Take.source          "practical" split out from "uploaded". A camera
+                         negative and a director's uploaded fix are different
+                         populations for eval and cannot be separated later.
+  + Take identity        camera_roll / slate / timecode_start — the minimum
+                         needed to match a Take document to a file on a card.
+  + RejectionReason      practical-only block. Without it every DoP reject
+                         collapses to `other`, which is the exact failure the
+                         enum exists to prevent.
+  ~ Scene.status         "covered" → "shot_listed". To a crew, covered means the
+                         footage exists; here it meant shots are planned.
+
+DELIBERATELY ABSENT: `project.mode`. A project-level hybrid flag cannot answer
+the only question asked at tool time — can the agent generate THIS shot — so it
+is not a control. If the UI wants a label it derives one from the shots'
+sources. A stored flag would be a second source of truth for a fact Shot.source
+already owns, and would drift the first time a pure-AI project gains one
+practical shot.
+
+v1.0 CHANGES — from the provider parameter audit across 18 outbound calls and
 11 providers:
 
   ~ IDEMPOTENCY_FIELDS   extended to cover every output-affecting parameter the
@@ -66,6 +97,10 @@ class Node(BaseModel):
 # default_episode_id (derivable), moodboard_urls, moodboard_image_url,
 # style_ref_url, format, is_sample, is_free_tier, tenant_id (deprecated),
 # selected_mood_id (superseded by moodboard_id), team_ids (no users behind it).
+#
+# Not added: `mode`. See the v1.1 note at the top of this file — the hybrid
+# distinction lives on Shot.source, and a project-level copy would be a second
+# source of truth with nothing reading it.
 # ─────────────────────────────────────────────────────────────────────────────
 
 ProjectType = Literal["movie", "micro_drama", "ad", "ugc", "trailer"]
@@ -83,6 +118,9 @@ class Taxonomy(BaseModel):
     which is WHAT the frame looks like. The legacy auto-direct prompt appended
     this as the CINEMATOGRAPHY BLUEPRINT and instructed the model to follow its
     camera movement, lens rules, and lighting approach.
+
+    Applies to practical coverage too: a shot list handed to a DoP is the same
+    grammar, addressed to a human instead of a provider.
 
     `archetype` is validated against the catalogue in taxonomy_archetypes.py
     (110 entries: 50 live-action, 30 2D, 30 3D). Not a Literal — a 110-value
@@ -215,7 +253,9 @@ class Scene(Node):
     set_design: Optional[SetDesign] = None
     wardrobe: Dict[str, str] = Field(default_factory=dict)   # character_id → outfit for this scene
 
-    # `covered` means shots exist.
+    # `shot_listed` means shots exist. Renamed from "covered" in v1.1: to a
+    # crew, covered means the footage is in the can, and the same word meaning
+    # two things on one production is a misread waiting to happen.
     #
     # TOOL CONTRACT — not enforced by this model: `write` on a scene must
     # compare incoming `synopsis` and `dialogue` against stored values and mark
@@ -223,7 +263,7 @@ class Scene(Node):
     # scene rewrite leaves its shots untouched, so they silently describe the
     # previous version of the scene. This field is where that surfaces, but
     # nothing here detects it.
-    status: Literal["draft", "ready", "covered", "stale"] = "draft"
+    status: Literal["draft", "ready", "shot_listed", "stale"] = "draft"
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -249,6 +289,9 @@ class Scene(Node):
 
 LocationAngle = Literal["wide", "front", "left", "right", "back"]
 
+# How this shot gets made. Not how it turned out — that is Take.source.
+ShotSource = Literal["generated", "practical"]
+
 
 class Shot(Node):
     order: int                                 # 0-based; authoritative for sequence
@@ -261,6 +304,20 @@ class Shot(Node):
     characters: List[str] = Field(default_factory=list)   # visible in THIS frame only
     props: List[str] = Field(default_factory=list)
     duration_seconds: int = 5                  # one continuous take: 3–15s
+
+    # REQUIRED, and deliberately without a default.
+    #
+    # This is the field that decides whether a generation tool may act on this
+    # shot at all. A default would let an unmigrated or malformed document read
+    # as "generated", and the agent would render coverage the crew is booked to
+    # shoot — the spike's invisible-ceiling failure, except the cost is a call
+    # sheet rather than a missing shot.
+    #
+    # `from_legacy()` must set this explicitly. There is no fallback: a legacy
+    # shot predates hybrid work and is therefore "generated", but that decision
+    # belongs in the coercion layer where it is visible, not in a field default
+    # where it is silent.
+    source: ShotSource
 
     # `stale` is set by the tool when the parent scene's synopsis or dialogue
     # changes — see the Scene.status contract above.
@@ -280,6 +337,11 @@ class Shot(Node):
 # Takes are a subcollection rather than an array so a collection-group query can
 # reach every take in a project. That is the eval layer's access pattern: the
 # approval signal is take-level, and the rejects are the training data.
+#
+# HYBRID: a practical take is a take. Same collection, same review path, same
+# rejection enum. That single fact is what makes a camera negative and a
+# generated frame comparable — and it is the only place in the product where
+# they are.
 # ─────────────────────────────────────────────────────────────────────────────
 
 TrackType = Literal["image", "video", "dialogue", "sfx", "music"]
@@ -297,7 +359,18 @@ class RejectionReason(str, Enum):
     Structured because this field is the proprietary half of the eval dataset,
     and a year of free-text notes cannot be retroactively categorised. Free text
     goes alongside in `rejection_note`, never instead.
+
+    Three blocks. The shared block applies to any take regardless of origin and
+    is where the practical-vs-generated comparison actually lives — a DoP
+    rejecting a real frame for lighting_mismatch and a director rejecting a
+    generated one for the same reason is the signal worth having.
+
+    Do not let practical rejects fall into `other`. That was the failure this
+    enum was built to prevent, and it is what happens if the practical block
+    below is missing.
     """
+
+    # ── Shared — either origin ────────────────────────────────────────────────
     face_inconsistent = "face_inconsistent"        # identity drift from the reference
     body_anatomy = "body_anatomy"                  # hands, limbs, proportion
     wardrobe_wrong = "wardrobe_wrong"              # not the specified outfit
@@ -305,41 +378,123 @@ class RejectionReason(str, Enum):
     grade_mismatch = "grade_mismatch"              # off-moodboard colour
     set_inconsistent = "set_inconsistent"          # background differs from the location
     composition = "composition"                    # framing does not match shot_type
-    prompt_drift = "prompt_drift"                  # rendered something not asked for
-    motion_artifact = "motion_artifact"            # video only: warping, morphing
-    pacing = "pacing"                              # video only: wrong speed or duration
+    pacing = "pacing"                              # wrong speed or duration
     audio_sync = "audio_sync"                      # audio only
     quality = "quality"                            # resolution, noise, artefacts
+
+    # ── Generated only ────────────────────────────────────────────────────────
+    prompt_drift = "prompt_drift"                  # rendered something not asked for
+    motion_artifact = "motion_artifact"            # warping, morphing, temporal instability
+
+    # ── Practical only ────────────────────────────────────────────────────────
+    focus_miss = "focus_miss"                      # soft where it needed to be sharp
+    exposure = "exposure"                          # clipped, crushed, or wrongly stopped
+    performance = "performance"                    # the take the actor gave
+    continuity_break = "continuity_break"          # contradicts an adjacent take
+    equipment_in_frame = "equipment_in_frame"      # boom, stand, crew, shadow
+    camera_operation = "camera_operation"          # unintended shake, bad move, missed mark
+
     other = "other"
+
+
+# Enforced by the review tool, not the model — Pydantic cannot see `source` and
+# `rejection_reason` as a pair without a validator, and a validator here would
+# make legacy reads fail. The tool checks membership before writing.
+GENERATED_ONLY_REASONS = frozenset({
+    RejectionReason.prompt_drift,
+    RejectionReason.motion_artifact,
+})
+
+PRACTICAL_ONLY_REASONS = frozenset({
+    RejectionReason.focus_miss,
+    RejectionReason.exposure,
+    RejectionReason.performance,
+    RejectionReason.continuity_break,
+    RejectionReason.equipment_in_frame,
+    RejectionReason.camera_operation,
+})
+
+
+# `refs` role vocabulary. Closed by convention rather than by type, because a
+# provider will add a reference kind before this file is next opened — but an
+# open vocabulary in practice means five spellings of the same role and no
+# usable query. Add here, do not invent at the call site.
+#
+#   character   identity reference for a person in frame
+#   location    the set or environment
+#   prop        an object in frame
+#   style       moodboard or grade reference
+#   first_frame start frame for a video generation
+#   last_frame  end frame for a video generation
+#   plate       the source take a derived take was made from — this is how a
+#               Beeble relight, an upscale, or an inpaint records its lineage.
+#               Without it a derived take looks like an original attempt and
+#               the eval layer counts it as one.
+REF_ROLES = frozenset({
+    "character", "location", "prop", "style",
+    "first_frame", "last_frame", "plate",
+})
 
 
 class Take(Node):
     """
     An asset with provenance. `source` is what keeps hybrid workflows possible
-    without a rewrite: an uploaded clip is a take like any other, it simply has
-    no generation record.
+    without a rewrite: a camera negative is a take like any other, it simply has
+    a slate instead of a provider.
     """
-    media_url: str
-    source: Literal["generated", "uploaded"] = "generated"
+
+    # OPTIONAL as of v1.1. A practical take is logged at the moment of capture,
+    # which is hours before the card is ingested and a URL exists. Requiring a
+    # URL to write the document means the log happens later from memory, or in a
+    # spreadsheet — and the metadata that makes a take findable is exactly the
+    # metadata that decays.
+    #
+    # TOOL CONTRACT: a take with source == "generated" MUST have media_url on
+    # write. A practical take may be written without one and filled in at
+    # ingest. Nothing selects a take into a Timeline without a media_url.
+    media_url: Optional[str] = None
+
+    # "practical" is split from "uploaded" deliberately. Both arrive as files
+    # rather than provider responses, but a camera negative and a director's
+    # uploaded fix are different populations — one is the shoot, the other is a
+    # patch — and merging them cannot be undone after the fact.
+    source: Literal["generated", "uploaded", "practical"] = "generated"
+
     duration_seconds: Optional[float] = None   # actual, which often differs from intended
 
-    # Present only when source == "generated".
+    # ── Present only when source == "generated" ───────────────────────────────
     provider: Optional[str] = None             # kling-v3-omni, seedance-2, gemini, elevenlabs
     model: Optional[str] = None
     resolved_prompt: Optional[str] = None      # what was actually sent, in provider dialect
-    refs: List[Dict[str, str]] = Field(default_factory=list)   # [{path, role}] — tree paths
+    refs: List[Dict[str, str]] = Field(default_factory=list)   # [{path, role}] — see REF_ROLES
     seed: Optional[str] = None                 # Seedance accepts one; Kling does not
     reroll: int = 0                            # deliberate re-attempt of an identical request
     run_id: Optional[str] = None
 
+    # ── Present only when source == "practical" ───────────────────────────────
+    #
+    # The minimum needed to find the file again. Without these a Take document
+    # cannot be matched to a clip on a card, and the eval signal is attached to
+    # footage nobody can locate. Three fields — resist a fourth. Crew, kit, and
+    # scheduling are production logistics and do not belong in the harness tree.
+    camera_roll: Optional[str] = None          # "A001" — card or magazine
+    slate: Optional[str] = None                # "12A/3" — scene/setup/take as called on set
+    timecode_start: Optional[str] = None       # "10:24:13:07" — HH:MM:SS:FF
+
     # DENORMALISED for display. Run.credits is the source of truth — it is what
     # reconciles against the transaction ledger. This copy exists so a take can
     # show its cost without a join, and must never be summed for billing.
+    # Null on practical takes: a shoot day is not billed in credits.
     credits: Optional[float] = None
 
     # Eval signal. Nullable until judged. Rejected takes are never deleted —
     # they are the half of the dataset no competitor can replicate. Provenance
     # matters: an approval with no judge and no timestamp cannot be weighted.
+    #
+    # This is the field the hybrid shoot exists to feed. A DoP circling takes on
+    # a monitor produces the same structured signal as a director approving
+    # generated frames, against the same enum, in the same collection-group
+    # query. Nobody else has both halves in one tree.
     approved: Optional[bool] = None
     rejection_reason: Optional[RejectionReason] = None
     rejection_note: Optional[str] = None
@@ -373,6 +528,10 @@ class BibleEntry(Node):
 
 class Character(BibleEntry):
     # image_views keys: primary, full_body, close_up, left_profile, right_profile
+    #
+    # On a hybrid production these are reference stills of the actual actor, and
+    # they are what makes generated coverage match practical coverage. Same
+    # field, same use — the reference just has a person behind it.
     type: Literal["human", "animal", "creature", "robot", "object"] = "human"
     role: Optional[Literal["primary", "secondary", "tertiary", "extra"]] = None
     voice_id: Optional[str] = None             # ElevenLabs or equivalent
@@ -381,7 +540,9 @@ class Character(BibleEntry):
 class Location(BibleEntry):
     # image_views keys: wide, front, left, right, back.
     # Audit finding: the upload path does not populate these, so an uploaded
-    # location has no angles and shots against it fall back to image_url.
+    # location has no angles and shots against it fall back to image_url. On a
+    # hybrid shoot this is the recce photo set, and it is the highest-value
+    # upload on the production — populate it.
     spatial_notes: Optional[str] = None        # room layout, for composition grounding
 
 
@@ -404,6 +565,9 @@ class Script(Node):
 # ─────────────────────────────────────────────────────────────────────────────
 # TIMELINE — the assembled cut. References takes, not shots: the cut is made of
 # specific approved attempts, and `media_op` needs somewhere to write.
+#
+# A hybrid cut is a timeline whose entries point at takes of both sources. There
+# is nothing to add here — that the model already permits it is the point.
 # ─────────────────────────────────────────────────────────────────────────────
 
 class TimelineEntry(BaseModel):
@@ -427,6 +591,10 @@ class Timeline(Node):
 # This is the durable-execution record — a run outlives the process that started
 # it, which matters because a shot list took 151s in the spike and a video
 # generation is longer still.
+#
+# There is no Run for a practical take. Nothing was executed, nothing was
+# charged, and there is no receipt to reconcile. A practical take with a run_id
+# is a bug.
 #
 # ORCHESTRATION — one source of truth. A batch run's `steps[]` is the plan of
 # record: a resuming worker reads it and nothing else to decide what remains.
@@ -536,6 +704,8 @@ class Run(Node):
 # on confirmation the counter increments and the key changes. In the manual UI
 # the button click is the confirmation. Without this, a legitimate re-roll is
 # indistinguishable from an accidental double-submit.
+#
+# None of this applies to practical takes. There is no run, no key, no charge.
 # ─────────────────────────────────────────────────────────────────────────────
 
 IDEMPOTENCY_FIELDS = (
@@ -629,6 +799,11 @@ class Message(Node):
 # needs a `from_legacy()` in the tool layer that strips and maps unknown fields
 # before construction. `extra="forbid"` applies at construction, so passing a
 # raw 45-field legacy shot document straight into Shot() will raise.
+#
+# v1.1 note for `from_legacy()` on Shot: `source` is required and has no
+# default, so the coercion layer must set it. Every legacy shot predates hybrid
+# work and is therefore "generated" — but write that line explicitly in
+# from_legacy() where a reader can see it, and never as a field default.
 # ─────────────────────────────────────────────────────────────────────────────
 
 NODE_MODELS = {
